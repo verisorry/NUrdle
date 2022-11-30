@@ -1,0 +1,107 @@
+[
+{
+  "directory": "/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/build",
+  "command": "/usr/bin/clang++  -I\"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/src\" -isystem \"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/src/../include\" -isystem \"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/build/.cs211/lib/ge211/src/../include\" -isystem /usr/local/include/SDL2 -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -Wall -Wcast-qual -Wdangling-else -Wnull-dereference -Wtype-limits -Wwrite-strings -Werror=bool-operation -Werror=int-to-pointer-cast -Werror=return-type -Werror=uninitialized -fsanitize=undefined -std=c++14 -o CMakeFiles/game.dir/src/model.cxx.o -c \"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/src/model.cxx\"",
+  "file": "/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/src/model.cxx"
+},
+{
+  "directory": "/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/build",
+  "command": "/usr/bin/clang++  -I\"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/src\" -isystem \"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/src/../include\" -isystem \"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/build/.cs211/lib/ge211/src/../include\" -isystem /usr/local/include/SDL2 -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -Wall -Wcast-qual -Wdangling-else -Wnull-dereference -Wtype-limits -Wwrite-strings -Werror=bool-operation -Werror=int-to-pointer-cast -Werror=return-type -Werror=uninitialized -fsanitize=undefined -std=c++14 -o CMakeFiles/game.dir/src/view.cxx.o -c \"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/src/view.cxx\"",
+  "file": "/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/src/view.cxx"
+},
+{
+  "directory": "/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/build",
+  "command": "/usr/bin/clang++  -I\"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/src\" -isystem \"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/src/../include\" -isystem \"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/build/.cs211/lib/ge211/src/../include\" -isystem /usr/local/include/SDL2 -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -Wall -Wcast-qual -Wdangling-else -Wnull-dereference -Wtype-limits -Wwrite-strings -Werror=bool-operation -Werror=int-to-pointer-cast -Werror=return-type -Werror=uninitialized -fsanitize=undefined -std=c++14 -o CMakeFiles/game.dir/src/controller.cxx.o -c \"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/src/controller.cxx\"",
+  "file": "/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/src/controller.cxx"
+},
+{
+  "directory": "/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/build",
+  "command": "/usr/bin/clang++  -I\"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/src\" -isystem \"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/src/../include\" -isystem \"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/build/.cs211/lib/ge211/src/../include\" -isystem /usr/local/include/SDL2 -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -Wall -Wcast-qual -Wdangling-else -Wnull-dereference -Wtype-limits -Wwrite-strings -Werror=bool-operation -Werror=int-to-pointer-cast -Werror=return-type -Werror=uninitialized -fsanitize=undefined -std=c++14 -o CMakeFiles/game.dir/src/main.cxx.o -c \"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/src/main.cxx\"",
+  "file": "/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/src/main.cxx"
+},
+{
+  "directory": "/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/build",
+  "command": "/usr/bin/clang++ -DCS211_TESTING -I\"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/src\" -isystem \"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/catch/include\" -isystem \"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/src/../include\" -isystem \"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/build/.cs211/lib/ge211/src/../include\" -isystem /usr/local/include/SDL2 -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -Wall -Wcast-qual -Wdangling-else -Wnull-dereference -Wtype-limits -Wwrite-strings -Werror=bool-operation -Werror=int-to-pointer-cast -Werror=return-type -Werror=uninitialized -fsanitize=undefined -std=c++14 -o CMakeFiles/model_test.dir/src/model.cxx.o -c \"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/src/model.cxx\"",
+  "file": "/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/src/model.cxx"
+},
+{
+  "directory": "/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/build",
+  "command": "/usr/bin/clang++ -DCS211_TESTING -I\"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/src\" -isystem \"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/catch/include\" -isystem \"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/src/../include\" -isystem \"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/build/.cs211/lib/ge211/src/../include\" -isystem /usr/local/include/SDL2 -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -Wall -Wcast-qual -Wdangling-else -Wnull-dereference -Wtype-limits -Wwrite-strings -Werror=bool-operation -Werror=int-to-pointer-cast -Werror=return-type -Werror=uninitialized -fsanitize=undefined -std=c++14 -o CMakeFiles/model_test.dir/test/model_test.cxx.o -c \"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/test/model_test.cxx\"",
+  "file": "/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/test/model_test.cxx"
+},
+{
+  "directory": "/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/build/.cs211/lib/catch",
+  "command": "/usr/bin/clang++  -I\"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/catch/include\" -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -std=c++14 -o CMakeFiles/catch.dir/src/catch.cxx.o -c \"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/catch/src/catch.cxx\"",
+  "file": "/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/catch/src/catch.cxx"
+},
+{
+  "directory": "/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/build/.cs211/lib/ge211/src",
+  "command": "/usr/bin/clang++ -DGE211_RESOURCES=\"\\\"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/src/../Resources/\\\",\\\"/usr/local/share/ge211/\\\"\" -I\"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/src/../include\" -I/usr/local/include/SDL2 -isystem \"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/3rdparty/utf8-cpp/include\" -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -Wall -Wextra -pedantic -std=c++14 -o CMakeFiles/ge211.dir/ge211_base.cxx.o -c \"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/src/ge211_base.cxx\"",
+  "file": "/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/src/ge211_base.cxx"
+},
+{
+  "directory": "/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/build/.cs211/lib/ge211/src",
+  "command": "/usr/bin/clang++ -DGE211_RESOURCES=\"\\\"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/src/../Resources/\\\",\\\"/usr/local/share/ge211/\\\"\" -I\"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/src/../include\" -I/usr/local/include/SDL2 -isystem \"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/3rdparty/utf8-cpp/include\" -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -Wall -Wextra -pedantic -std=c++14 -o CMakeFiles/ge211.dir/ge211_color.cxx.o -c \"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/src/ge211_color.cxx\"",
+  "file": "/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/src/ge211_color.cxx"
+},
+{
+  "directory": "/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/build/.cs211/lib/ge211/src",
+  "command": "/usr/bin/clang++ -DGE211_RESOURCES=\"\\\"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/src/../Resources/\\\",\\\"/usr/local/share/ge211/\\\"\" -I\"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/src/../include\" -I/usr/local/include/SDL2 -isystem \"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/3rdparty/utf8-cpp/include\" -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -Wall -Wextra -pedantic -std=c++14 -o CMakeFiles/ge211.dir/ge211_engine.cxx.o -c \"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/src/ge211_engine.cxx\"",
+  "file": "/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/src/ge211_engine.cxx"
+},
+{
+  "directory": "/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/build/.cs211/lib/ge211/src",
+  "command": "/usr/bin/clang++ -DGE211_RESOURCES=\"\\\"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/src/../Resources/\\\",\\\"/usr/local/share/ge211/\\\"\" -I\"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/src/../include\" -I/usr/local/include/SDL2 -isystem \"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/3rdparty/utf8-cpp/include\" -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -Wall -Wextra -pedantic -std=c++14 -o CMakeFiles/ge211.dir/ge211_event.cxx.o -c \"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/src/ge211_event.cxx\"",
+  "file": "/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/src/ge211_event.cxx"
+},
+{
+  "directory": "/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/build/.cs211/lib/ge211/src",
+  "command": "/usr/bin/clang++ -DGE211_RESOURCES=\"\\\"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/src/../Resources/\\\",\\\"/usr/local/share/ge211/\\\"\" -I\"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/src/../include\" -I/usr/local/include/SDL2 -isystem \"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/3rdparty/utf8-cpp/include\" -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -Wall -Wextra -pedantic -std=c++14 -o CMakeFiles/ge211.dir/ge211_error.cxx.o -c \"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/src/ge211_error.cxx\"",
+  "file": "/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/src/ge211_error.cxx"
+},
+{
+  "directory": "/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/build/.cs211/lib/ge211/src",
+  "command": "/usr/bin/clang++ -DGE211_RESOURCES=\"\\\"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/src/../Resources/\\\",\\\"/usr/local/share/ge211/\\\"\" -I\"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/src/../include\" -I/usr/local/include/SDL2 -isystem \"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/3rdparty/utf8-cpp/include\" -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -Wall -Wextra -pedantic -std=c++14 -o CMakeFiles/ge211.dir/ge211_geometry.cxx.o -c \"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/src/ge211_geometry.cxx\"",
+  "file": "/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/src/ge211_geometry.cxx"
+},
+{
+  "directory": "/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/build/.cs211/lib/ge211/src",
+  "command": "/usr/bin/clang++ -DGE211_RESOURCES=\"\\\"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/src/../Resources/\\\",\\\"/usr/local/share/ge211/\\\"\" -I\"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/src/../include\" -I/usr/local/include/SDL2 -isystem \"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/3rdparty/utf8-cpp/include\" -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -Wall -Wextra -pedantic -std=c++14 -o CMakeFiles/ge211.dir/ge211_audio.cxx.o -c \"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/src/ge211_audio.cxx\"",
+  "file": "/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/src/ge211_audio.cxx"
+},
+{
+  "directory": "/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/build/.cs211/lib/ge211/src",
+  "command": "/usr/bin/clang++ -DGE211_RESOURCES=\"\\\"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/src/../Resources/\\\",\\\"/usr/local/share/ge211/\\\"\" -I\"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/src/../include\" -I/usr/local/include/SDL2 -isystem \"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/3rdparty/utf8-cpp/include\" -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -Wall -Wextra -pedantic -std=c++14 -o CMakeFiles/ge211.dir/ge211_random.cxx.o -c \"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/src/ge211_random.cxx\"",
+  "file": "/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/src/ge211_random.cxx"
+},
+{
+  "directory": "/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/build/.cs211/lib/ge211/src",
+  "command": "/usr/bin/clang++ -DGE211_RESOURCES=\"\\\"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/src/../Resources/\\\",\\\"/usr/local/share/ge211/\\\"\" -I\"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/src/../include\" -I/usr/local/include/SDL2 -isystem \"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/3rdparty/utf8-cpp/include\" -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -Wall -Wextra -pedantic -std=c++14 -o CMakeFiles/ge211.dir/ge211_render.cxx.o -c \"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/src/ge211_render.cxx\"",
+  "file": "/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/src/ge211_render.cxx"
+},
+{
+  "directory": "/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/build/.cs211/lib/ge211/src",
+  "command": "/usr/bin/clang++ -DGE211_RESOURCES=\"\\\"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/src/../Resources/\\\",\\\"/usr/local/share/ge211/\\\"\" -I\"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/src/../include\" -I/usr/local/include/SDL2 -isystem \"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/3rdparty/utf8-cpp/include\" -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -Wall -Wextra -pedantic -std=c++14 -o CMakeFiles/ge211.dir/ge211_resource.cxx.o -c \"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/src/ge211_resource.cxx\"",
+  "file": "/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/src/ge211_resource.cxx"
+},
+{
+  "directory": "/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/build/.cs211/lib/ge211/src",
+  "command": "/usr/bin/clang++ -DGE211_RESOURCES=\"\\\"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/src/../Resources/\\\",\\\"/usr/local/share/ge211/\\\"\" -I\"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/src/../include\" -I/usr/local/include/SDL2 -isystem \"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/3rdparty/utf8-cpp/include\" -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -Wall -Wextra -pedantic -std=c++14 -o CMakeFiles/ge211.dir/ge211_session.cxx.o -c \"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/src/ge211_session.cxx\"",
+  "file": "/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/src/ge211_session.cxx"
+},
+{
+  "directory": "/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/build/.cs211/lib/ge211/src",
+  "command": "/usr/bin/clang++ -DGE211_RESOURCES=\"\\\"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/src/../Resources/\\\",\\\"/usr/local/share/ge211/\\\"\" -I\"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/src/../include\" -I/usr/local/include/SDL2 -isystem \"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/3rdparty/utf8-cpp/include\" -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -Wall -Wextra -pedantic -std=c++14 -o CMakeFiles/ge211.dir/ge211_sprites.cxx.o -c \"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/src/ge211_sprites.cxx\"",
+  "file": "/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/src/ge211_sprites.cxx"
+},
+{
+  "directory": "/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/build/.cs211/lib/ge211/src",
+  "command": "/usr/bin/clang++ -DGE211_RESOURCES=\"\\\"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/src/../Resources/\\\",\\\"/usr/local/share/ge211/\\\"\" -I\"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/src/../include\" -I/usr/local/include/SDL2 -isystem \"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/3rdparty/utf8-cpp/include\" -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -Wall -Wextra -pedantic -std=c++14 -o CMakeFiles/ge211.dir/ge211_window.cxx.o -c \"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/src/ge211_window.cxx\"",
+  "file": "/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/src/ge211_window.cxx"
+},
+{
+  "directory": "/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/build/.cs211/lib/ge211/example",
+  "command": "/usr/bin/clang++  -isystem \"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/src/../include\" -isystem \"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/build/.cs211/lib/ge211/src/../include\" -isystem /usr/local/include/SDL2 -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -Wall -pedantic-errors -std=c++14 -o CMakeFiles/fireworks.dir/fireworks.cxx.o -c \"/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/example/fireworks.cxx\"",
+  "file": "/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/.cs211/lib/ge211/example/fireworks.cxx"
+}
+]
