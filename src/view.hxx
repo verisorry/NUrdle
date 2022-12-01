@@ -2,6 +2,7 @@
 
 #include "model.hxx"
 
+// static const int grid_size = 
 class View
 {
 public:
@@ -22,7 +23,7 @@ private:
 
     ge211::Rectangle_sprite const cell_sprite;
     ge211::Rectangle_sprite const guess_cell_sprite;
-    ge211::Font sans30 {"sans.ttf", 30};
+    ge211::Font sans30_{"sans.ttf", 30};
     ge211::Text_sprite input_sprite;
-    ge211::Text_sprite cell_text_sprite;
+    ge211::Text_sprite cell_text_sprite[6][5];
 };

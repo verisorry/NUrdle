@@ -29,5 +29,17 @@ View::View(Model const& model)
 void
 View::draw(ge211::Sprite_set& set)
 {
-    // This needs to do something!
+    for (int i = 0; i < model_.grid_height; i++) {
+        for (int j = 0; j < model_.grid_width; j++) {
+            ge211::Text_sprite::Builder cell_builder(sans30_);
+            cell_builder << model_.square_at(i, j);
+
+            cell_text_sprite[i][j].reconfigure(cell_builder);
+
+            set.add_sprite(cell_text_sprite[i][j], {i*cell_width, j*cell_height});
+
+            
+
+        }
+    }
 }
