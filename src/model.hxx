@@ -4,7 +4,7 @@
 
 class Model
 {
-    public:
+public:
     Model();
 
     const int grid_width = 5;
@@ -12,4 +12,6 @@ class Model
 
     char square_at(int i, int j) const;
 
+private:
+    char squares_[5][6];
 };
