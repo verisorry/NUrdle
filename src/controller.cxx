@@ -6,29 +6,6 @@
 
 #include <ge211.hxx>
 
-// class Controller : public ge211::Abstract_game {
-//     public:
-
-//         // opens and reads one word per line
-//         explicit Controller(std::string const& filename);
-
-//     protected:
-//         // called by ge211 when it needs to redraw the screen
-//         void draw(ge211::Sprite_set& sprites) override;
-//         // called by ge211 once before game starts (set up)
-//         void on_start() override;
-//         //called by ge211 when game engine is ready
-//         void on_frame(double dt) override;
-//         //called by ge211 when the user presses a key
-//         void on_key(ge211::Key key) override;
-//         //called by ge211 to find out window dimensions
-//         ge211::Dims<int> initial_window_dimensions() const override;
-    
-//     private:
-//         Model model_;
-//         View view_;
-// };
-
 Controller::Controller()
         : view_(model_)
 { }
@@ -37,6 +14,20 @@ View::Dimensions
 Controller::initial_window_dimensions() const
 {
     return view_.initial_window_dimensions();
+}
+
+void
+Controller::on_key(ge211::Key key)
+{
+    model_.hit_key(char(key.code()));
+
+//    if (model_.game_is_finished()) {
+//        model_ = Model {"gameover"};
+//    }
+//
+//    if (model_.typing_progress().empty()) {
+//        load_word_();
+//    }
 }
 
 void
