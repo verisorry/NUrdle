@@ -14,10 +14,16 @@ Model::Model()
             squares_[i][j] = ' ';
         }
     }
+    for (int i = 0; i < grid_width; i++) {
+            guess_grid_[i] = ' ';
+    }
 }
 
 char Model::square_at(int i, int j) const {
     return squares_[i][j];
+}
+char Model::guess_grid_at(int i) const {
+    return guess_grid_[i];
 }
 
 bool Model::valid_guess() {
@@ -39,14 +45,30 @@ bool Model::valid_guess() {
 void
 Model::hit_key(char letter)
 {
-    if (letter == 13 && num_letters_in_guess == 5) {
-        valid_guess();
+    if (letter == 13) {
         if (valid_guess()) {
-            squares_[1][1] = letter;
+            // Call check the guess
+            
+            // insert guess into grid
+            for (int i = 0; i < grid_width; i++) {
+                squares_[i][num_guesses_used] = user_guess_[i];
+            }
+            update_num_guesses();
+        }
+//        for (int j = 0; j < grid_width; j++) {
+//            squares_[j][6] = ' ';
+//        }
+        for (int j = 0; j < grid_width; j++) {
+            guess_grid_[j] = ' ';
         }
     }
+//    if (num_letters_in_guess < 5) {
+//        squares_[num_letters_in_guess][6] = letter;
+//        update_guess(num_letters_in_guess, letter);
+//        update_num_letters();
+//    }
     if (num_letters_in_guess < 5) {
-        squares_[num_letters_in_guess][0] = letter;
+        guess_grid_[num_letters_in_guess] = letter;
         update_guess(num_letters_in_guess, letter);
         update_num_letters();
     }

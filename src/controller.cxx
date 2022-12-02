@@ -35,10 +35,6 @@ Controller::on_key(ge211::Key key)
 //    if (model_.game_is_finished()) {
 //        model_ = Model {"gameover"};
 //    }
-//
-//    if (model_.typing_progress().empty()) {
-//        load_word_();
-//    }
 }
 
 void

@@ -19,6 +19,7 @@ public:
     const int grid_height = 6;
 
     char square_at(int i, int j) const;
+    char guess_grid_at(int i) const;
 
     void update_guess(int i, char input) {
         user_guess_[i] = input;
@@ -28,6 +29,9 @@ public:
         num_letters_in_guess = num_letters_in_guess + 1;
     }
 
+    void update_num_guesses() {
+        num_guesses_used = num_guesses_used + 1;
+    }
     bool valid_guess();
 
     void hit_key(char actual);
@@ -39,8 +43,11 @@ public:
     Letter_outcome check_guess();
 private:
     char squares_[5][6];
+    char guess_grid_[5];
     int num_letters_in_guess = 0;
+    int num_guesses_used = 0;
     std::vector<std::string> dictionary_ = {"elder", "sruti"};
     std::string correct_word_;
     size_t next_word_index_ = 0;
+    bool used_all_guesses = false;
 };

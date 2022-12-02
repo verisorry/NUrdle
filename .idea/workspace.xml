@@ -28,9 +28,10 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/game" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/game" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller.cxx" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller.cxx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller.hxx" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller.hxx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model.cxx" beforeDir="false" afterPath="$PROJECT_DIR$/src/model.cxx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model.hxx" beforeDir="false" afterPath="$PROJECT_DIR$/src/model.hxx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view.cxx" beforeDir="false" afterPath="$PROJECT_DIR$/src/view.cxx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view.hxx" beforeDir="false" afterPath="$PROJECT_DIR$/src/view.hxx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

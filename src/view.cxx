@@ -55,14 +55,17 @@ View::draw(ge211::Sprite_set& set)
             set.add_sprite(cell_text_sprite[i][j], {i*cell_width+10+(cell_width/6), j*cell_height+10+(cell_height/20)}, 1);
         }
     }
-
     // add guess cell sprite to bottom
     set.add_sprite(guess_cell_sprite, {10, model_.grid_height * cell_height+10}, 0);
 
-    ge211::Text_sprite::Builder input_builder(sans30_);
-    input_builder << model_.user_guess_;
+    for (int i = 0; i < model_.grid_width; i++) {
+        ge211::Text_sprite::Builder input_builder(sans30_);
+        //input_builder << model_.user_guess_;
+        input_builder << model_.guess_grid_at(i);
 
-    input_sprite.reconfigure(input_builder);
-    set.add_sprite(input_sprite, {10, model_.grid_height * cell_height+10}, 1);
+        input_sprite[i].reconfigure(input_builder);
+        //set.add_sprite(input_sprite[i], {10, model_.grid_height * cell_height+10}, 1);
+        set.add_sprite(input_sprite[i], {i*cell_width+10+(cell_width/6), 6*cell_height+10+(cell_height/20)}, 1);
+    }
 
 }
