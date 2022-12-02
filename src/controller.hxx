@@ -10,6 +10,9 @@ class Controller : public ge211::Abstract_game
 public:
     Controller();
 
+    explicit Controller(std::vector<std::string> const& words);
+    Controller(std::initializer_list<std::string> words);
+
 protected:
     void draw(ge211::Sprite_set& set) override;
 

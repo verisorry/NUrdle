@@ -9,6 +9,13 @@
 Controller::Controller()
         : view_(model_)
 { }
+Controller::Controller(std::vector<std::string> const& words)
+        : model_(words),
+          view_(model_)
+{ }
+Controller::Controller(std::initializer_list<std::string> words)
+        : Controller(std::vector<std::string>(words))
+{ }
 
 View::Dimensions
 Controller::initial_window_dimensions() const

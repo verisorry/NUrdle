@@ -14,6 +14,9 @@ public:
         correct,
     };
 
+    explicit Model(const std::vector<std::string>& words);
+    explicit Model(std::initializer_list<std::string> words);
+
     const int grid_width = 5;
     const int grid_height = 6;
 
@@ -23,11 +26,21 @@ public:
         user_guess_[i][1] = input;
         num_letters_in_guess = num_letters_in_guess + 1;
     }
+    void submit_guess() {
+        submit_guess_ = true;
+    }
 
     void hit_key(char actual);
 
+
+
 private:
+    void load_word();
     char squares_[5][6];
     char user_guess_[5][1];
     int num_letters_in_guess = 0;
+    bool submit_guess_;
+    std::vector<std::string> dictionary_;
+    std::string correct_word_;
+    size_t next_word_index_ = 0;
 };

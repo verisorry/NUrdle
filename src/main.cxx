@@ -3,7 +3,7 @@
 int
 main()
 {
-    Controller().run();
-
+    //Controller().run();
+    Controller({"explicit", "word", "list"}).run();
     return 0;
 }
