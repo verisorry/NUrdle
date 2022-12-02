@@ -58,6 +58,11 @@ View::draw(ge211::Sprite_set& set)
 
     // add guess cell sprite to bottom
     set.add_sprite(guess_cell_sprite, {10, model_.grid_height * cell_height+10}, 0);
+
+    ge211::Text_sprite::Builder input_builder(sans30_);
+    input_builder << model_.user_guess_;
+
+    input_sprite.reconfigure(input_builder);
     set.add_sprite(input_sprite, {10, model_.grid_height * cell_height+10}, 1);
 
 }

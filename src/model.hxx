@@ -30,12 +30,13 @@ public:
 
     void hit_key(char actual);
 
+    char user_guess_[5];
+
 
 
 private:
     void load_word();
     char squares_[5][6];
-    char user_guess_[5];
     int num_letters_in_guess = 0;
     bool submit_guess_;
     std::vector<std::string> dictionary_;
