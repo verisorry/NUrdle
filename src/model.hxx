@@ -23,7 +23,7 @@ public:
     char square_at(int i, int j) const;
 
     void update_guess(int i, char input) {
-        user_guess_[i][1] = input;
+        user_guess_[i] = input;
         num_letters_in_guess = num_letters_in_guess + 1;
     }
     void submit_guess() {
@@ -37,7 +37,7 @@ public:
 private:
     void load_word();
     char squares_[5][6];
-    char user_guess_[5][1];
+    char user_guess_[5];
     int num_letters_in_guess = 0;
     bool submit_guess_;
     std::vector<std::string> dictionary_;
