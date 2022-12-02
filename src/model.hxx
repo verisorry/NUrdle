@@ -34,11 +34,13 @@ public:
 
     char user_guess_[5];
 
-private:
     void load_word();
+
+    Letter_outcome check_guess();
+private:
     char squares_[5][6];
     int num_letters_in_guess = 0;
-    std::vector<std::string> dictionary_;
+    std::vector<std::string> dictionary_ = {"elder", "sruti"};
     std::string correct_word_;
     size_t next_word_index_ = 0;
 };

@@ -16,6 +16,17 @@ Controller::initial_window_dimensions() const
     return view_.initial_window_dimensions();
 }
 
+std::string
+Controller::initial_window_title() const {
+    return view_.initial_window_title();
+}
+
+void
+Controller::on_start()
+{
+    model_.load_word();
+}
+
 void
 Controller::on_key(ge211::Key key)
 {
