@@ -22,11 +22,21 @@ public:
 
     void update_guess(int i, char input) {
         user_guess_[i] = input;
+<<<<<<< Updated upstream
         num_letters_in_guess = num_letters_in_guess + 1;
     }
     void submit_guess() {
         submit_guess_ = true;
     }
+=======
+    }
+
+    void update_num_letters() {
+        num_letters_in_guess = num_letters_in_guess + 1;
+    }
+
+    bool valid_guess();
+>>>>>>> Stashed changes
 
     void hit_key(char actual);
 
@@ -36,7 +46,6 @@ private:
     void load_word();
     char squares_[5][6];
     int num_letters_in_guess = 0;
-    bool submit_guess_;
     std::vector<std::string> dictionary_;
     std::string correct_word_;
     size_t next_word_index_ = 0;
