@@ -1,6 +1,7 @@
 #include <utility>
 
 #include "model.hxx"
+<<<<<<< HEAD
 
 Model::Model() 
 {
@@ -40,3 +41,6 @@ Model::load_word()
     //     correct_word_ = dictionary_[next_word_index_++];
     // }
 }
+=======
+#sadge
+>>>>>>> 64e34780bfe5fbadf4562bd9bf5a0d8a0cf0c394
