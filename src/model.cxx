@@ -53,7 +53,7 @@ Model::hit_key(char letter)
 
     if (letter == 13) {
         if (valid_guess()) {
-            // Call check the guess for each letter
+            // Call check the guess
             check_guess();
             // insert guess into grid
             for (int i = 0; i < grid_width; i++) {
@@ -76,7 +76,7 @@ Model::hit_key(char letter)
         }
     }
 }
-
+// Loads the correct answer
 void
 Model::load_word()
 {
@@ -89,6 +89,7 @@ Model::load_word()
 // Checks the guess:
 void
 Model::check_guess() {
+    reset_outcome();
     for (int i = 0; i < grid_width; i++) {
         if (user_guess_[i] == correct_word_[i]) {
             guess_outcome[i] = 'c';

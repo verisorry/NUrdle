@@ -8,12 +8,12 @@ class Model
 public:
     Model();
 
-    enum class Letter_outcome
-    {
-        absent,
-        present,
-        correct,
-    };
+//    enum class Letter_outcome
+//    {
+//        absent,
+//        present,
+//        correct,
+//    };
 
     const int grid_width = 5;
     const int grid_height = 6;
@@ -51,7 +51,7 @@ public:
 
     void check_guess();
 
-    char guess_outcome[5];
+    char guess_outcome[5] = {'a', 'a','a', 'a','a'};
 
 private:
     char squares_[5][6];
