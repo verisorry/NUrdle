@@ -32,8 +32,12 @@ void
 Model::load_word()
 {
     correct_word_.clear();
-    
-    while (next_word_index_ < dictionary_.size() && correct_word_.empty()) {
-        correct_word_ = dictionary_[next_word_index_++];
+
+    while (correct_word_.empty()) {
+        correct_word_ = dictionary_[next_word_index_++ % dictionary_.size()];
     }
+    
+    // while (next_word_index_ < dictionary_.size() && correct_word_.empty()) {
+    //     correct_word_ = dictionary_[next_word_index_++];
+    // }
 }
