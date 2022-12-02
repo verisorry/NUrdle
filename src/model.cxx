@@ -1,3 +1,5 @@
+#include <utility>
+
 #include "model.hxx"
 
 Model::Model() 
@@ -9,16 +11,6 @@ Model::Model()
     }
 
 }
-
-Model::Model(const std::vector<std::string>& words)
-        : dictionary_(words)
-{
-    load_word();
-}
-
-Model::Model(std::initializer_list<std::string> words)
-        : Model(std::vector<std::string>(words))
-{ }
 
 char Model::square_at(int i, int j) const {
     return squares_[i][j];

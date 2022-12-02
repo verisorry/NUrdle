@@ -1,6 +1,7 @@
 #pragma once
 
 #include <ge211.hxx>
+#include <initializer_list>
 
 class Model
 {
@@ -13,9 +14,6 @@ public:
         present,
         correct,
     };
-
-    explicit Model(const std::vector<std::string>& words);
-    explicit Model(std::initializer_list<std::string> words);
 
     const int grid_width = 5;
     const int grid_height = 6;
