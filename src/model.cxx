@@ -1,7 +1,13 @@
 #include <utility>
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <regex>
 
 #include "model.hxx"
 <<<<<<< HEAD
+
+using namespace std;
 
 Model::Model() 
 {
@@ -16,6 +22,47 @@ char Model::square_at(int i, int j) const {
     return squares_[i][j];
 }
 
+<<<<<<< Updated upstream
+=======
+//bool Model::valid_guess(char* filename, char guess[5]) {
+//    int offset;
+//    string line;
+//    ifstream Myfile;
+//    Myfile.open(filename);
+//
+//    if (Myfile.is_open())
+//    {
+//        while (!Myfile.eof())
+//        {
+//            getline(Myfile,line);
+//            if ((offset = line.find(guess[5], 0)) != string::npos)
+//            {
+//                Myfile.close();
+//                return true;
+//            }
+//        }
+//        Myfile.close();
+//    }
+//    return false;
+//}
+
+bool Model::valid_guess() {
+    ifstream ifs("../resources/dict.txt");
+    string word = "";
+    for (int i = 0; i < sizeof(user_guess_); i++) {
+        word = word + user_guess_[i];
+    }
+    std::regex e{"\\b" + word + "\\b"};
+    string line;
+    while( getline(ifs, line))
+    {
+        if ( regex_search( line, e) )
+            return true;
+    }
+    return false;
+}
+
+>>>>>>> Stashed changes
 void
 Model::hit_key(char letter)
 {
@@ -25,6 +72,7 @@ Model::hit_key(char letter)
     if (num_letters_in_guess < 5) {
         squares_[num_letters_in_guess][0] = letter;
         update_guess(num_letters_in_guess, letter);
+        update_num_letters();
     }
 }
 
