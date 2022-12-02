@@ -47,14 +47,14 @@ Model::hit_key(char letter)
 {
     if (num_letters_in_guess < 5) {
         guess_grid_[num_letters_in_guess] = letter;
-        update_guess(num_letters_in_guess, letter);
+        update_guess(num_letters_in_guess, tolower(letter));
         update_num_letters();
     }
 
     if (letter == 13) {
         if (valid_guess()) {
             // Call check the guess for each letter
-
+            check_guess();
             // insert guess into grid
             for (int i = 0; i < grid_width; i++) {
                 squares_[i][num_guesses_used] = user_guess_[i];
@@ -65,6 +65,7 @@ Model::hit_key(char letter)
             update_num_guesses();
             reset_num_letters();
             reset_guess();
+            reset_outcome();
         }
         else {
             for (int j = 0; j < grid_width; j++) {
@@ -85,10 +86,21 @@ Model::load_word()
         correct_word_ = dictionary_[next_word_index_++ % dictionary_.size()];
     }
 }
+// Checks the guess:
+void
+Model::check_guess() {
+    for (int i = 0; i < grid_width; i++) {
+        if (user_guess_[i] == correct_word_[i]) {
+            guess_outcome[i] = 'c';
+        }
+        else if (correct_word_.find(user_guess_[i]) != std::string::npos) {
+            guess_outcome[i] = 'p';
+        }
+        else {
+            guess_outcome[i] = 'a';
+        }
+    }
+}
 
-// Checks the guess: 
-//Model::Letter_outcome Model::check_guess(int i) {
-//
-//}
 
 

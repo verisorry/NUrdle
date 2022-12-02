@@ -30,7 +30,10 @@ Controller::on_start()
 void
 Controller::on_key(ge211::Key key)
 {
-    model_.hit_key(char(key.code()));
+    if (key.is_textual() || char(key.code()) == 13) {
+        model_.hit_key(char(key.code()));
+    }
+
 
 //    if (model_.game_is_finished()) {
 //        model_ = Model {"gameover"};

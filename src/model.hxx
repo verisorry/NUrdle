@@ -27,6 +27,9 @@ public:
     void reset_guess() {
         memset(user_guess_, 0, sizeof user_guess_);
     }
+    void reset_outcome() {
+        memset(guess_outcome, 0, sizeof guess_outcome);
+    }
 
     void update_num_letters() {
         num_letters_in_guess = num_letters_in_guess + 1;
@@ -46,7 +49,10 @@ public:
 
     void load_word();
 
-    Letter_outcome check_guess(int i);
+    void check_guess();
+
+    char guess_outcome[5];
+
 private:
     char squares_[5][6];
     char guess_grid_[5];
@@ -56,4 +62,5 @@ private:
     std::string correct_word_;
     size_t next_word_index_ = 0;
     bool used_all_guesses = false;
+
 };
