@@ -9,7 +9,6 @@ Model::Model()
             squares_[i][j] = 'A';
         }
     }
-
 }
 
 char Model::square_at(int i, int j) const {

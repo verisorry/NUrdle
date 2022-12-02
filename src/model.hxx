@@ -32,8 +32,6 @@ public:
 
     char user_guess_[5];
 
-
-
 private:
     void load_word();
     char squares_[5][6];
