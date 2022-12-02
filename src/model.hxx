@@ -23,15 +23,22 @@ public:
     void update_guess(int i, char input) {
         user_guess_[i] = input;
     }
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
     void update_num_letters() {
         num_letters_in_guess = num_letters_in_guess + 1;
     }
 
+<<<<<<< Updated upstream
     void submit_guess() {
         submit_guess_ = true;
     }
 
+=======
+    // bool valid_guess(char* filename, char guess[5]);
+>>>>>>> Stashed changes
     bool valid_guess();
 
     void hit_key(char actual);

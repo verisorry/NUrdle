@@ -9,6 +9,8 @@
 
 using namespace std;
 
+using namespace std;
+
 Model::Model() 
 {
     for (int i = 0; i < grid_width; i++) {
@@ -23,7 +25,10 @@ char Model::square_at(int i, int j) const {
 }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 //bool Model::valid_guess(char* filename, char guess[5]) {
 //    int offset;
 //    string line;
