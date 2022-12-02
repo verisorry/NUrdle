@@ -4,7 +4,7 @@ Model::Model()
 {
     for (int i = 0; i < grid_width; i++) {
         for (int j = 0; j < grid_height; j++) {
-            squares_[i][j] = ' ';
+            squares_[i][j] = 'A';
         }
     }
 
