@@ -25,7 +25,11 @@ private:
     struct cell_;
 
     ge211::Rectangle_sprite const cell_sprite;
+    ge211::Rectangle_sprite const present_cell_sprite;
+    ge211::Rectangle_sprite const correct_cell_sprite;
     ge211::Rectangle_sprite const guess_cell_sprite;
+
+
     ge211::Font sans30_{"sans.ttf", 30};
     ge211::Text_sprite input_sprite;
     ge211::Text_sprite cell_text_sprite[5][6];
