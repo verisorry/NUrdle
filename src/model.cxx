@@ -47,10 +47,10 @@ Model::hit_key(char letter)
 {
     if (letter == 13) {
         if (valid_guess()) {
-            // Call check the guess
-            
+            // Call check the guess for each letter
             // insert guess into grid
             for (int i = 0; i < grid_width; i++) {
+
                 squares_[i][num_guesses_used] = user_guess_[i];
             }
             update_num_guesses();
@@ -83,5 +83,10 @@ Model::load_word()
         correct_word_ = dictionary_[next_word_index_++ % dictionary_.size()];
     }
 }
+
+// Checks the guess: must also clear num letters in user guess
+//Model::Letter_outcome Model::check_guess(int i) {
+//
+//}
 
 

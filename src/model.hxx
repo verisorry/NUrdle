@@ -40,7 +40,7 @@ public:
 
     void load_word();
 
-    Letter_outcome check_guess();
+    Letter_outcome check_guess(int i);
 private:
     char squares_[5][6];
     char guess_grid_[5];
