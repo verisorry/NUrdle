@@ -3,11 +3,7 @@
 #include <fstream>
 #include <string>
 #include <regex>
-
 #include "model.hxx"
-<<<<<<< HEAD
-
-using namespace std;
 
 using namespace std;
 
@@ -15,7 +11,7 @@ Model::Model()
 {
     for (int i = 0; i < grid_width; i++) {
         for (int j = 0; j < grid_height; j++) {
-            squares_[i][j] = 'A';
+            squares_[i][j] = ' ';
         }
     }
 }
@@ -23,33 +19,6 @@ Model::Model()
 char Model::square_at(int i, int j) const {
     return squares_[i][j];
 }
-
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> Stashed changes
-//bool Model::valid_guess(char* filename, char guess[5]) {
-//    int offset;
-//    string line;
-//    ifstream Myfile;
-//    Myfile.open(filename);
-//
-//    if (Myfile.is_open())
-//    {
-//        while (!Myfile.eof())
-//        {
-//            getline(Myfile,line);
-//            if ((offset = line.find(guess[5], 0)) != string::npos)
-//            {
-//                Myfile.close();
-//                return true;
-//            }
-//        }
-//        Myfile.close();
-//    }
-//    return false;
-//}
 
 bool Model::valid_guess() {
     ifstream ifs("../resources/dict.txt");
@@ -67,12 +36,14 @@ bool Model::valid_guess() {
     return false;
 }
 
->>>>>>> Stashed changes
 void
 Model::hit_key(char letter)
 {
     if (letter == 13 && num_letters_in_guess == 5) {
-        submit_guess();
+        valid_guess();
+        if (valid_guess()) {
+            squares_[1][1] = letter;
+        }
     }
     if (num_letters_in_guess < 5) {
         squares_[num_letters_in_guess][0] = letter;
@@ -94,6 +65,3 @@ Model::load_word()
     //     correct_word_ = dictionary_[next_word_index_++];
     // }
 }
-=======
-#sadge
->>>>>>> 64e34780bfe5fbadf4562bd9bf5a0d8a0cf0c394
