@@ -24,9 +24,15 @@ public:
     void update_guess(int i, char input) {
         user_guess_[i] = input;
     }
+    void reset_guess() {
+        memset(user_guess_, 0, sizeof user_guess_);
+    }
 
     void update_num_letters() {
         num_letters_in_guess = num_letters_in_guess + 1;
+    }
+    void reset_num_letters() {
+        num_letters_in_guess = 0;
     }
 
     void update_num_guesses() {
