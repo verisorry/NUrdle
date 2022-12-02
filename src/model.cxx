@@ -1,13 +1,11 @@
 #include <utility>
-
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <regex>
 #include "model.hxx"
-<<<<<<< Updated upstream
-=======
 
 using namespace std;
-
-using namespace std;
->>>>>>> Stashed changes
 
 Model::Model() 
 {
@@ -22,11 +20,6 @@ char Model::square_at(int i, int j) const {
     return squares_[i][j];
 }
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> Stashed changes
 bool Model::valid_guess() {
     ifstream ifs("../resources/dict.txt");
     string word = "";
@@ -46,16 +39,16 @@ bool Model::valid_guess() {
 void
 Model::hit_key(char letter)
 {
-<<<<<<< Updated upstream
-    if (letter == 13) {
-=======
     if (letter == 13 && num_letters_in_guess == 5) {
->>>>>>> Stashed changes
         valid_guess();
+        if (valid_guess()) {
+            squares_[1][1] = letter;
+        }
     }
     if (num_letters_in_guess < 5) {
         squares_[num_letters_in_guess][0] = letter;
         update_guess(num_letters_in_guess, letter);
+        update_num_letters();
     }
 }
 

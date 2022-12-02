@@ -22,13 +22,6 @@ public:
 
     void update_guess(int i, char input) {
         user_guess_[i] = input;
-<<<<<<< Updated upstream
-        num_letters_in_guess = num_letters_in_guess + 1;
-    }
-    void submit_guess() {
-        submit_guess_ = true;
-    }
-=======
     }
 
     void update_num_letters() {
@@ -36,7 +29,6 @@ public:
     }
 
     bool valid_guess();
->>>>>>> Stashed changes
 
     void hit_key(char actual);
 
