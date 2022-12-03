@@ -92,6 +92,7 @@ Model::hit_key(char letter)
                 end_text[6][5] = 'G'; end_text[7][5] = 'E';
                 won = true;
             }
+
             //update_num_guesses();
             reset_num_letters();
             reset_guess();

@@ -66,11 +66,13 @@ public:
     bool invalid_guess = false;
 
     int num_guesses_used = 0;
-//    void on_frame(double dt);
+
     char end_text[10][7];
 
     bool won = false;
     bool compare(int i);
+    bool used_all_guesses = false;
+
 private:
     char squares_[5][6];
     char guess_grid_[5];
@@ -78,6 +80,5 @@ private:
     std::vector<std::string> dictionary_ = {"elder"};
     std::string correct_word_;
     size_t next_word_index_ = 0;
-    bool used_all_guesses = false;
     char cor_guess[5] = {'c', 'c', 'c', 'c', 'c'};
 };
