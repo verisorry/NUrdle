@@ -48,13 +48,22 @@ View::draw(ge211::Sprite_set& set)
         for (int y = 0; y < model_.grid_height; y++) {
             set.add_sprite(cell_sprite, {x*cell_width+10, y*cell_height+10}, 0);
 
+            // for (int i = 0; i < 30; i++) {
+            //     if (model_.guess_outcome[i] == 'c')
+            //     {
+            //         set.add_sprite(correct_cell_sprite, {x * cell_width + 10, model_.num_guesses_used * cell_height + 10}, 1);
+            //     }
+            //     else if (model_.guess_outcome[i] == 'p')
+            //     {
+            //         set.add_sprite(present_cell_sprite, {x * cell_width + 10, model_.num_guesses_used * cell_height + 10}, 1);
+            //     }
+            // }
+
             if (model_.guess_outcome[x] == 'c') {
                 set.add_sprite(correct_cell_sprite, {x*cell_width+10, model_.num_guesses_used*cell_height+10}, 1);
             } else if (model_.guess_outcome[x] == 'p') {
                 set.add_sprite(present_cell_sprite, {x*cell_width+10, model_.num_guesses_used*cell_height+10}, 1);
-            } else if (model_.guess_outcome[x] == 'a') {
-                set.add_sprite(cell_sprite, {x*cell_width+10, y*cell_height+10}, 1);
-            }
+            } 
 
             ge211::Text_sprite::Builder cell_builder(sans30_);
             cell_builder.color(Color::black());

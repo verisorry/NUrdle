@@ -8,13 +8,6 @@ class Model
 public:
     Model();
 
-//    enum class Letter_outcome
-//    {
-//        absent,
-//        present,
-//        correct,
-//    };
-    //int grid_start = 0;
     const int grid_width = 5;
     const int grid_height = 6;
     const int window_width = 10;
@@ -63,13 +56,48 @@ public:
 
     char guess_outcome[5] = {'a', 'a','a', 'a','a'};
 
+    // char guess_outcome[30] = {
+    //     'a',
+    //     'a',
+    //     'a',
+    //     'a',
+    //     'a',
+    //     'a',
+    //     'a',
+    //     'a',
+    //     'a',
+    //     'a',
+    //     'a',
+    //     'a',
+    //     'a',
+    //     'a',
+    //     'a',
+    //     'a',
+    //     'a',
+    //     'a',
+    //     'a',
+    //     'a',
+    //     'a',
+    //     'a',
+    //     'a',
+    //     'a',
+    //     'a',
+    //     'a',
+    //     'a',
+    //     'a',
+    //     'a',
+    //     'a'};
+
     bool invalid_guess = false;
 
     int num_guesses_used = 0;
-//    void on_frame(double dt);
+
     char end_text[10][7];
 
     bool won = false;
+
+    bool used_all_guesses = false;
+
 private:
     char squares_[5][6];
     char guess_grid_[5];
@@ -77,6 +105,5 @@ private:
     std::vector<std::string> dictionary_ = {"elder"};
     std::string correct_word_;
     size_t next_word_index_ = 0;
-    bool used_all_guesses = false;
     char cor_guess_outcome[5] = {'c', 'c', 'c', 'c', 'c'};
 };

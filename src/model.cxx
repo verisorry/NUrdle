@@ -134,6 +134,23 @@ Model::load_word()
 void
 Model::check_guess() {
     reset_outcome();
+
+    // for (int i = num_guesses_used * 5; i < num_guesses_used + 1 * 5; i++)
+    // {
+    //     if (user_guess_[i % 5] == correct_word_[i % 5])
+    //     {
+    //         guess_outcome[i] = 'c';
+    //     }
+    //     else if (correct_word_.find(user_guess_[i % 5]) != std::string::npos)
+    //     {
+    //         guess_outcome[i] = 'p';
+    //     }
+    //     else
+    //     {
+    //         guess_outcome[i] = 'a';
+    //     }
+    // }
+
     for (int i = 0; i < grid_width; i++) {
         if (user_guess_[i] == correct_word_[i]) {
             guess_outcome[i] = 'c';
@@ -146,20 +163,4 @@ Model::check_guess() {
         }
     }
 }
-
-//void Model::on_frame(double dt) {
-//    if (invalid_guess) {
-//
-//    }
-//    if (key_pressed_ == 'q') {
-//        pokemon_ = pokemon_.next(dt);
-//    }
-//
-//    if (key_pressed_ == 'k') {
-//        //handle each frame of jumping
-//        jump(dt);
-//    }
-//}
-
-
 
