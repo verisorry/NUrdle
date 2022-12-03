@@ -179,9 +179,13 @@ View::draw(ge211::Sprite_set& set)
 //    }
 
 //    if (model_.won) {
-//        for (int i = 0; i < model_.grid_width; i++) {
-//            set.add_sprite(cell_sprite, {i*cell_width+10, (model_.num_guesses_used-1)*cell_height+10}, 1);
+//        for (int x = 0; x < model_.grid_width; x++) {
+//            for (int y = 0; y < model_.grid_height; y++) {
+//                set.add_sprite(cell_sprite, {x*cell_width+10, y*cell_height+10}, 3);
+//            }
 //        }
+//        set.add_sprite(guess_cell_sprite, {10, model_.grid_height * cell_height+10}, 3);
+//
 //    }
 
     // animate

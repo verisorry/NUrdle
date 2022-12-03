@@ -101,7 +101,12 @@ public:
 
 =======
     bool compare(int i);
+<<<<<<< HEAD
 >>>>>>> origin/kattempt
+=======
+    bool used_all_guesses = false;
+
+>>>>>>> kattempt
 private:
     char squares_[5][6];
     char guess_grid_[5];
@@ -110,9 +115,12 @@ private:
     std::string correct_word_;
     size_t next_word_index_ = 0;
 <<<<<<< HEAD
+<<<<<<< HEAD
     char cor_guess_outcome[5] = {'c', 'c', 'c', 'c', 'c'};
 =======
     bool used_all_guesses = false;
+=======
+>>>>>>> kattempt
     char cor_guess[5] = {'c', 'c', 'c', 'c', 'c'};
 >>>>>>> origin/kattempt
 };

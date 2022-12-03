@@ -3,6 +3,7 @@
 
 using namespace ge211;
 
+<<<<<<< HEAD
 struct Test_access {
     Model& model;
 
@@ -14,6 +15,19 @@ struct Test_access {
 
 TEST_CASE("Check Absent Character")
 {
+=======
+struct Test_access
+{
+    Model &model;
+
+    explicit Test_access(Model &);
+
+    void set_guess(char user_guess_[5]);
+};
+
+TEST_CASE("Check Absent Character")
+{
+>>>>>>> kattempt
     Model model;
     Test_access access(model);
 
@@ -23,7 +37,12 @@ TEST_CASE("Check Absent Character")
     CHECK(model.valid_guess() == true);
     model.check_guess();
 
+<<<<<<< HEAD
     for (int i = 0; i < 5; i++) {
+=======
+    for (int i = 0; i < 5; i++)
+    {
+>>>>>>> kattempt
         CHECK(model.guess_outcome[i] == 'a');
     }
 }
@@ -83,7 +102,12 @@ TEST_CASE("Check Failed Game")
     Model model;
     Test_access access(model);
 
+<<<<<<< HEAD
     for (int i = 0; i < 5; i++) {
+=======
+    for (int i = 0; i < 5; i++)
+    {
+>>>>>>> kattempt
         char test[5] = {'t', 'o', 'x', 'i', 'c'};
         access.set_guess(test);
         CHECK(model.valid_guess() == true);
@@ -93,7 +117,11 @@ TEST_CASE("Check Failed Game")
         CHECK(model.guess_outcome[2] == 'a');
         CHECK(model.guess_outcome[3] == 'a');
         CHECK(model.guess_outcome[4] == 'a');
+<<<<<<< HEAD
         CHECK(model.num_guesses_used == i+1);
+=======
+        CHECK(model.num_guesses_used == i + 1);
+>>>>>>> kattempt
         CHECK(model.won == false);
     }
 
@@ -101,12 +129,24 @@ TEST_CASE("Check Failed Game")
     CHECK(model.won == false);
 }
 
+<<<<<<< HEAD
 Test_access::Test_access(Model& model) 
     : model(model) 
 { }
 
 void Test_access::set_guess(char input[5]) {
     for (int i = 0; i < 5; i++) {
+=======
+Test_access::Test_access(Model &model)
+    : model(model)
+{
+}
+
+void Test_access::set_guess(char input[5])
+{
+    for (int i = 0; i < 5; i++)
+    {
+>>>>>>> kattempt
         model.user_guess_[i] = input[i];
     }
 }
