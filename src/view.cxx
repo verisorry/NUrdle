@@ -68,7 +68,6 @@ View::draw(ge211::Sprite_set& set)
         set.add_sprite(input_sprite[i], {i*cell_width+10+(cell_width/6), 6*cell_height+10+(cell_height/20)}, 1);
     }
 
-<<<<<<< HEAD
     if (!model_.invalid_guess) {
         for (int i = 0; i < model_.grid_width; i++) {
             if (model_.guess_outcome[i] == 'c') {
@@ -106,6 +105,4 @@ View::draw(ge211::Sprite_set& set)
             set.add_sprite(end_text_sprite[x][y], {x*cell_width+10+(cell_width/6), y*cell_height+10+(cell_height/20)}, 2);
         }
     }
-=======
->>>>>>> parent of 709e5d8 (idek anymore)
 }

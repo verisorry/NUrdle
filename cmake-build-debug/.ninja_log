@@ -19,6 +19,7 @@
 528	1087	1669927604369174048	.cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_audio.cxx.o	a7d7d3499580a865
 658	1170	1669927604449933159	.cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_sprites.cxx.o	c409073febf8efb5
 <<<<<<< HEAD
+<<<<<<< HEAD
 2	583	1670034717637082414	CMakeFiles/game.dir/src/view.cxx.o	3937fef77f46ef7
 583	699	1670034717755084800	game	676a84575f70755e
 2	503	1670034734347250531	CMakeFiles/game.dir/src/view.cxx.o	3937fef77f46ef7
@@ -98,6 +99,8 @@
 509	609	1670044530232782616	game	676a84575f70755e
 >>>>>>> Stashed changes
 =======
+=======
+>>>>>>> parent of 709e5d8 (idek anymore)
 2	1120	1670021851628045556	CMakeFiles/game.dir/src/model.cxx.o	f98c59b18b3542e3
 1120	1233	1670021851745912091	game	676a84575f70755e
 4	619	1670022698811618078	CMakeFiles/game.dir/src/main.cxx.o	9323170cf6c8dcc1
@@ -123,4 +126,7 @@
 1102	1215	1670026088557168881	game	676a84575f70755e
 3	1143	1670026190537053576	CMakeFiles/game.dir/src/model.cxx.o	f98c59b18b3542e3
 1145	1264	1670026190662374970	game	676a84575f70755e
+<<<<<<< HEAD
+>>>>>>> parent of 709e5d8 (idek anymore)
+=======
 >>>>>>> parent of 709e5d8 (idek anymore)
