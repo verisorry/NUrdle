@@ -111,6 +111,7 @@ Model::hit_key(char letter)
                 end_text[6][1] = 'O'; end_text[7][1] = 'S'; end_text[8][1] = 'T'; end_text[9][1] = '!';
                 end_text[5][2] = 'T'; end_text[6][2] = 'R'; end_text[7][2] = 'Y'; end_text[5][3] = 'A';
                 end_text[6][3] = 'G'; end_text[7][3] = 'A'; end_text[8][3] = 'I'; end_text[9][3] = 'N';
+                won = true;
                 //invalid_guess = true;
             }
             update_num_guesses();
