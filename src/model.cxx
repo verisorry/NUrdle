@@ -58,16 +58,48 @@ Model::hit_key(char letter)
             // insert guess into grid
             for (int i = 0; i < grid_width; i++) {
                 squares_[i][num_guesses_used] = user_guess_[i];
+                cout << guess_outcome[i];
             }
             for (int j = 0; j < grid_width; j++) {
                 guess_grid_[j] = ' ';
             }
+            // If win
+            if (strcmp(guess_outcome, cor_guess_outcome) == 0) {
+                for (int i = 0; i < grid_width; i++) {
+                    for (int j = 0; j < grid_height; j++) {
+                        squares_[i][j] = ' ';
+                    }
+                }
+                squares_[0][0] = 'E'; squares_[1][0] = 'L'; squares_[2][0] = 'D'; squares_[3][0] = 'E';
+                squares_[4][0] = 'R'; squares_[0][1] = 'O'; squares_[1][1] = 'F'; squares_[0][2] = 'A';
+                squares_[0][3] = 'G'; squares_[1][3] = 'R'; squares_[2][3] = 'E'; squares_[3][3] = 'A';
+                squares_[4][3] = 'T'; squares_[0][4] = 'E'; squares_[1][4] = 'R'; squares_[0][5] = 'A';
+                squares_[1][5] = 'G'; squares_[2][5] = 'E';
+            }
             update_num_guesses();
             reset_num_letters();
             reset_guess();
-            reset_outcome();
+            //reset_outcome();
+            // If lose
+            if (num_guesses_used == 6 && strcmp(guess_outcome, cor_guess_outcome) != 0) {
+                update_used_all_guesses();
+                for (int i = 0; i < grid_width; i++) {
+                    for (int j = 0; j < grid_height; j++) {
+                        squares_[i][j] = ' ';
+                    }
+                }
+                squares_[1][0] = 'Y';
+                squares_[2][0] = 'O';
+                squares_[3][0] = 'U';
+                squares_[0][1] = 'L';
+                squares_[1][1] = 'O';
+                squares_[2][1] = 'S';
+                squares_[3][1] = 'T';
+                squares_[4][1] = '!';
+            }
         }
         else {
+            invalid_guess = true;
             for (int j = 0; j < grid_width; j++) {
                 guess_grid_[j] = ' ';
             }

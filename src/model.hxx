@@ -37,6 +37,9 @@ public:
     void reset_num_letters() {
         num_letters_in_guess = 0;
     }
+    void update_used_all_guesses() {
+        used_all_guesses = true;
+    }
 
     void update_num_guesses() {
         num_guesses_used = num_guesses_used + 1;
@@ -53,14 +56,16 @@ public:
 
     char guess_outcome[5] = {'a', 'a','a', 'a','a'};
 
+    bool invalid_guess = false;
 private:
     char squares_[5][6];
     char guess_grid_[5];
     int num_letters_in_guess = 0;
     int num_guesses_used = 0;
-    std::vector<std::string> dictionary_ = {"elder", "sruti"};
+    std::vector<std::string> dictionary_ = {"elder", "sruti", "windy"};
     std::string correct_word_;
     size_t next_word_index_ = 0;
     bool used_all_guesses = false;
+    char cor_guess_outcome[5] = {'c', 'c', 'c', 'c', 'c'};
 
 };
