@@ -58,7 +58,7 @@ bool Model::valid_guess() {
 void
 Model::hit_key(char letter)
 {
-    if (num_letters_in_guess < 5) {
+    if (num_letters_in_guess < 5 && !won) {
         guess_grid_[num_letters_in_guess] = letter;
         update_guess(num_letters_in_guess, tolower(letter));
         update_num_letters();
