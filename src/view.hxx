@@ -24,9 +24,9 @@ private:
 
     struct cell_;
 
-    ge211::Rectangle_sprite const cell_sprite;
-    ge211::Rectangle_sprite const present_cell_sprite;
-    ge211::Rectangle_sprite const correct_cell_sprite;
+    ge211::Rectangle_sprite cell_sprite;
+    ge211::Rectangle_sprite present_cell_sprite;
+    ge211::Rectangle_sprite correct_cell_sprite;
     ge211::Rectangle_sprite const guess_cell_sprite;
 
 

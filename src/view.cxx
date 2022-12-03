@@ -31,7 +31,7 @@ View::View(Model const& model)
 
 View::Dimensions
 View::initial_window_dimensions() const {
-    return {cell_width * model_.window_width + 15, cell_height * model_.grid_height + guess_height+15};
+    return {cell_width * model_.grid_width + 15, cell_height * model_.grid_height + guess_height+15};
 }
 
 
@@ -48,6 +48,12 @@ View::draw(ge211::Sprite_set& set)
         for (int y = 0; y < model_.grid_height; y++) {
 
             set.add_sprite(cell_sprite, {x*cell_width+10, y*cell_height+10}, 0);
+
+            if (model_.guess_outcome[x] == 'c') {
+                cell_sprite.recolor(correct_colour);
+            } else if (model_.guess_outcome[x] == 'p') {
+                cell_sprite.recolor(present_colour);
+            }
 
             ge211::Text_sprite::Builder cell_builder(sans30_);
             cell_builder.color(Color::black());
