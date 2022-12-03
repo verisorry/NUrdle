@@ -74,24 +74,106 @@ View::draw(ge211::Sprite_set& set)
     }
 
     if (!model_.invalid_guess) {
-        for (int i = 0; i < model_.grid_width; i++) {
-            if (model_.guess_outcome[i] == 'c') {
-                set.add_sprite(correct_cell_sprite, {i*cell_width+10, (model_.num_guesses_used-1)*cell_height+10}, 1);
-            }
-            else if (model_.guess_outcome[i] == 'p') {
-                set.add_sprite(present_cell_sprite, {i*cell_width+10, (model_.num_guesses_used-1)*cell_height+10}, 1);
-            }
-            else {
-                set.add_sprite(cell_sprite, {i*cell_width+10, (model_.num_guesses_used-1)*cell_height+10}, 1);
+        if (model_.num_guesses_used <= 0) {
+            for (int i = 0; i < 5; i++) {
+                if (model_.guess_outcome[i] == 'c') {
+                    set.add_sprite(correct_cell_sprite, {i*cell_width+10, (model_.num_guesses_used-1)*cell_height+10}, 1);
+                }
+                else if (model_.guess_outcome[i] == 'p') {
+                    set.add_sprite(present_cell_sprite, {i*cell_width+10, (model_.num_guesses_used-1)*cell_height+10}, 1);
+                }
+                else {
+                    set.add_sprite(cell_sprite, {i*cell_width+10, (model_.num_guesses_used-1)*cell_height+10}, 1);
+                }
             }
         }
+        if (model_.num_guesses_used <= 1) {
+            for (int i = 5; i < 10; i++) {
+                if (model_.guess_outcome[i] == 'c') {
+                    set.add_sprite(correct_cell_sprite, {(i-5)*cell_width+10, (model_.num_guesses_used-1)*cell_height+10}, 1);
+                }
+                else if (model_.guess_outcome[i] == 'p') {
+                    set.add_sprite(present_cell_sprite, {(i-5)*cell_width+10, (model_.num_guesses_used-1)*cell_height+10}, 1);
+                }
+                else {
+                    set.add_sprite(cell_sprite, {(i-5)*cell_width+10, (model_.num_guesses_used-1)*cell_height+10}, 1);
+                }
+            }
+        }
+        if (model_.num_guesses_used <= 2) {
+            for (int i = 10; i < 15; i++) {
+                if (model_.guess_outcome[i] == 'c') {
+                    set.add_sprite(correct_cell_sprite, {(i-10)*cell_width+10, (model_.num_guesses_used-1)*cell_height+10}, 1);
+                }
+                else if (model_.guess_outcome[i] == 'p') {
+                    set.add_sprite(present_cell_sprite, {(i-10)*cell_width+10, (model_.num_guesses_used-1)*cell_height+10}, 1);
+                }
+                else {
+                    set.add_sprite(cell_sprite, {(i-10)*cell_width+10, (model_.num_guesses_used-1)*cell_height+10}, 1);
+                }
+            }
+        }
+        if (model_.num_guesses_used <= 3) {
+            for (int i = 15; i < 20; i++) {
+                if (model_.guess_outcome[i] == 'c') {
+                    set.add_sprite(correct_cell_sprite, {(i-15)*cell_width+10, (model_.num_guesses_used-1)*cell_height+10}, 1);
+                }
+                else if (model_.guess_outcome[i] == 'p') {
+                    set.add_sprite(present_cell_sprite, {(i-15)*cell_width+10, (model_.num_guesses_used-1)*cell_height+10}, 1);
+                }
+                else {
+                    set.add_sprite(cell_sprite, {(i-15)*cell_width+10, (model_.num_guesses_used-1)*cell_height+10}, 1);
+                }
+            }
+        }
+        if (model_.num_guesses_used <= 4) {
+            for (int i = 20; i < 25; i++) {
+                if (model_.guess_outcome[i] == 'c') {
+                    set.add_sprite(correct_cell_sprite, {(i-20)*cell_width+10, (model_.num_guesses_used-1)*cell_height+10}, 1);
+                }
+                else if (model_.guess_outcome[i] == 'p') {
+                    set.add_sprite(present_cell_sprite, {(i-20)*cell_width+10, (model_.num_guesses_used-1)*cell_height+10}, 1);
+                }
+                else {
+                    set.add_sprite(cell_sprite, {(i-20)*cell_width+10, (model_.num_guesses_used-1)*cell_height+10}, 1);
+                }
+            }
+        }
+        if (model_.num_guesses_used <= 5) {
+            for (int i = 25; i < 30; i++) {
+                if (model_.guess_outcome[i] == 'c') {
+                    set.add_sprite(correct_cell_sprite, {(i-25)*cell_width+10, (model_.num_guesses_used-1)*cell_height+10}, 1);
+                }
+                else if (model_.guess_outcome[i] == 'p') {
+                    set.add_sprite(present_cell_sprite, {(i-25)*cell_width+10, (model_.num_guesses_used-1)*cell_height+10}, 1);
+                }
+                else {
+                    set.add_sprite(cell_sprite, {(i-25)*cell_width+10, (model_.num_guesses_used-1)*cell_height+10}, 1);
+                }
+            }
+        }
+
     }
 
-    if (model_.won) {
-        for (int i = 0; i < model_.grid_width; i++) {
-            set.add_sprite(cell_sprite, {i*cell_width+10, (model_.num_guesses_used-1)*cell_height+10}, 1);
-        }
+    if (!model_.invalid_guess) {
+            for (int i = 0; i < model_.grid_width; i++) {
+                if (model_.guess_outcome[i] == 'c') {
+                    set.add_sprite(correct_cell_sprite, {i*cell_width+10, (model_.num_guesses_used-1)*cell_height+10}, 1);
+                }
+                else if (model_.guess_outcome[i] == 'p') {
+                    set.add_sprite(present_cell_sprite, {i*cell_width+10, (model_.num_guesses_used-1)*cell_height+10}, 1);
+                }
+                else {
+                    set.add_sprite(cell_sprite, {i*cell_width+10, (model_.num_guesses_used-1)*cell_height+10}, 1);
+                }
+            }
     }
+
+//    if (model_.won) {
+//        for (int i = 0; i < model_.grid_width; i++) {
+//            set.add_sprite(cell_sprite, {i*cell_width+10, (model_.num_guesses_used-1)*cell_height+10}, 1);
+//        }
+//    }
 
     // animate
 //    if (model_.invalid_guess) {

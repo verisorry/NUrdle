@@ -68,6 +68,7 @@ Model::hit_key(char letter)
         if (valid_guess()) {
             // Call check the guess
             invalid_guess = false;
+            //update_num_guesses();
             check_guess();
             // insert guess into grid
             for (int i = 0; i < grid_width; i++) {
@@ -77,7 +78,8 @@ Model::hit_key(char letter)
                 guess_grid_[j] = ' ';
             }
             // If win
-            if (strcmp(guess_outcome, cor_guess_outcome) == 0) {
+            //if (strcmp(user_guess_, cor_guess) == 0) {
+            if (compare(num_guesses_used)) {
                 for (int i = 0; i < grid_width; i++) {
                     for (int j = 0; j < grid_height; j++) {
                         squares_[i][j] = ' ';
@@ -97,7 +99,7 @@ Model::hit_key(char letter)
             //grid_start++;
             //reset_outcome();
             // If lose
-            if (num_guesses_used == 6 && strcmp(guess_outcome, cor_guess_outcome) != 0) {
+            if (num_guesses_used == 6 && !compare(num_guesses_used)) {
                 update_used_all_guesses();
                 for (int i = 0; i < grid_width; i++) {
                     for (int j = 0; j < grid_height; j++) {
@@ -133,18 +135,177 @@ Model::load_word()
 // Checks the guess:
 void
 Model::check_guess() {
-    reset_outcome();
-    for (int i = 0; i < grid_width; i++) {
-        if (user_guess_[i] == correct_word_[i]) {
-            guess_outcome[i] = 'c';
+    //reset_outcome();
+    if (num_guesses_used == 0) {
+        for (int i = 0; i < 5; i++) {
+            if (user_guess_[i] == correct_word_[i]) {
+                guess_outcome[i] = 'c';
+            }
+            else if (correct_word_.find(user_guess_[i]) != std::string::npos) {
+                guess_outcome[i] = 'p';
+            }
+            else {
+                guess_outcome[i] = 'a';
+            }
         }
-        else if (correct_word_.find(user_guess_[i]) != std::string::npos) {
-            guess_outcome[i] = 'p';
-        }
-        else {
-            guess_outcome[i] = 'a';
+        if (strcmp(user_guess_, cor_guess) == 0) {
+            cout << 'c';
         }
     }
+    else if (num_guesses_used == 1) {
+        for (int i = 5; i < 10; i++) {
+            if (user_guess_[i-5] == correct_word_[i-5]) {
+                guess_outcome[i] = 'c';
+            }
+            else if (correct_word_.find(user_guess_[i-5]) != std::string::npos) {
+                guess_outcome[i] = 'p';
+            }
+            else {
+                guess_outcome[i] = 'a';
+            }
+        }
+
+    }
+    else if (num_guesses_used == 2) {
+        for (int i = 10; i < 15; i++) {
+            if (user_guess_[i-10] == correct_word_[i-10]) {
+                guess_outcome[i] = 'c';
+            }
+            else if (correct_word_.find(user_guess_[i-10]) != std::string::npos) {
+                guess_outcome[i] = 'p';
+            }
+            else {
+                guess_outcome[i] = 'a';
+            }
+        }
+    }
+    else if (num_guesses_used == 3) {
+        for (int i = 15; i < 20; i++) {
+            if (user_guess_[i-15] == correct_word_[i-15]) {
+                guess_outcome[i] = 'c';
+            }
+            else if (correct_word_.find(user_guess_[i-15]) != std::string::npos) {
+                guess_outcome[i] = 'p';
+            }
+            else {
+                guess_outcome[i] = 'a';
+            }
+        }
+    }
+    else if (num_guesses_used == 4) {
+        for (int i = 20; i < 25; i++) {
+            if (user_guess_[i-20] == correct_word_[i-20]) {
+                guess_outcome[i] = 'c';
+            }
+            else if (correct_word_.find(user_guess_[i-20]) != std::string::npos) {
+                guess_outcome[i] = 'p';
+            }
+            else {
+                guess_outcome[i] = 'a';
+            }
+        }
+    }
+    else if (num_guesses_used == 5) {
+        for (int i = 25; i < 30; i++) {
+            if (user_guess_[i-25] == correct_word_[i-25]) {
+                guess_outcome[i] = 'c';
+            }
+            else if (correct_word_.find(user_guess_[i-25]) != std::string::npos) {
+                guess_outcome[i] = 'p';
+            }
+            else {
+                guess_outcome[i] = 'a';
+            }
+        }
+    }
+
+
+//    for (int i = 0; i < grid_width; i++) {
+//        if (user_guess_[i] == correct_word_[i]) {
+//            guess_outcome[i] = 'c';
+//        }
+//        else if (correct_word_.find(user_guess_[i]) != std::string::npos) {
+//            guess_outcome[i] = 'p';
+//        }
+//        else {
+//            guess_outcome[i] = 'a';
+//        }
+//    }
+}
+
+
+bool
+Model::compare(int i) {
+    int counter = 0;
+    if (i == 0) {
+        for (int j = 0; j < 5; j ++) {
+            if (guess_outcome[j] == cor_guess[j]) {
+                counter++;
+            }
+        }
+        if (counter == 5) {
+            counter = 0;
+            return true;
+        }
+    }
+    if (i == 1) {
+        for (int j = 5; j < 10; j ++) {
+            if (guess_outcome[j] == cor_guess[j-5]) {
+                counter++;
+            }
+        }
+        if (counter == 5) {
+            counter = 0;
+            return true;
+        }
+
+    }
+    if (i == 2) {
+        for (int j = 10; j < 15; j ++) {
+            if (guess_outcome[j] == cor_guess[j-10]) {
+                counter++;
+            }
+        }
+        if (counter == 5) {
+            counter = 0;
+            return true;
+        }
+    }
+    if (i == 3) {
+        for (int j = 15; j < 20; j ++) {
+            if (guess_outcome[j] == cor_guess[j-15]) {
+                counter++;
+            }
+        }
+        if (counter == 5) {
+            counter = 0;
+            return true;
+        }
+    }
+    if (i == 4) {
+        for (int j = 20; j < 25; j ++) {
+            if (guess_outcome[j] == cor_guess[j-20]) {
+                counter++;
+            }
+        }
+        if (counter == 5) {
+            counter = 0;
+            return true;
+        }
+    }
+    if (i == 5) {
+        for (int j = 25; j < 30; j ++) {
+            if (guess_outcome[j] == cor_guess[j-25]) {
+                counter++;
+            }
+        }
+        if (counter == 5) {
+            counter = 0;
+            return true;
+        }
+    }
+    counter = 0;
+    return false;
 }
 
 //void Model::on_frame(double dt) {

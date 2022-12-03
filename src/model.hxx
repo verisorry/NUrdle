@@ -61,7 +61,7 @@ public:
 
     void check_guess();
 
-    char guess_outcome[5] = {'a', 'a','a', 'a','a'};
+    char guess_outcome[30];
 
     bool invalid_guess = false;
 
@@ -70,6 +70,7 @@ public:
     char end_text[10][7];
 
     bool won = false;
+    bool compare(int i);
 private:
     char squares_[5][6];
     char guess_grid_[5];
@@ -78,5 +79,5 @@ private:
     std::string correct_word_;
     size_t next_word_index_ = 0;
     bool used_all_guesses = false;
-    char cor_guess_outcome[5] = {'c', 'c', 'c', 'c', 'c'};
+    char cor_guess[5] = {'c', 'c', 'c', 'c', 'c'};
 };
