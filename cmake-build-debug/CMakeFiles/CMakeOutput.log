@@ -15,13 +15,15 @@ The CXX compiler identification is AppleClang, found in "/Users/kellenlai/Docume
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: /Users/kellenlai/Documents/GitHub/NUrdle/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_4e26f && [1/2] Building CXX object CMakeFiles/cmTC_4e26f.dir/CMakeCXXCompilerABI.cpp.o
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_4499b/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_4499b.dir/build.make CMakeFiles/cmTC_4499b.dir/build
+Building CXX object CMakeFiles/cmTC_4499b.dir/CMakeCXXCompilerABI.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/c++   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk   -v -Wl,-v -MD -MT CMakeFiles/cmTC_4499b.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_4499b.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_4499b.dir/CMakeCXXCompilerABI.cpp.o -c /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCXXCompilerABI.cpp
 Apple clang version 13.1.6 (clang-1316.0.21.2.5)
 Target: arm64-apple-darwin21.4.0
 Thread model: posix
 InstalledDir: /Library/Developer/CommandLineTools/usr/bin
 clang: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
- "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx12.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -fno-rounding-math -munwind-tables -target-sdk-version=12.3 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +fp-armv8 -target-feature +neon -target-feature +crc -target-feature +crypto -target-feature +dotprod -target-feature +fp16fml -target-feature +ras -target-feature +lse -target-feature +rdm -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -fallow-half-arguments-and-returns -debugger-tuning=lldb -target-linker-version 763 -v -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/13.1.6 -dependency-file CMakeFiles/cmTC_4e26f.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_4e26f.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -stdlib=libc++ -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/13.1.6/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -Wno-objc-load-method -fdeprecated-macro -fdebug-compilation-dir=/Users/kellenlai/Documents/GitHub/NUrdle/cmake-build-debug/CMakeFiles/CMakeTmp -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+messageToSelfInClassMethodIdReturnType -clang-vendor-feature=+disableInferNewAvailabilityFromInit -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_4e26f.dir/CMakeCXXCompilerABI.cpp.o -x c++ /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCXXCompilerABI.cpp
+ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx12.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -fno-rounding-math -munwind-tables -target-sdk-version=12.3 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +fp-armv8 -target-feature +neon -target-feature +crc -target-feature +crypto -target-feature +dotprod -target-feature +fp16fml -target-feature +ras -target-feature +lse -target-feature +rdm -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -fallow-half-arguments-and-returns -debugger-tuning=lldb -target-linker-version 763 -v -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/13.1.6 -dependency-file CMakeFiles/cmTC_4499b.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_4499b.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -stdlib=libc++ -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/13.1.6/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -Wno-objc-load-method -fdeprecated-macro -fdebug-compilation-dir=/Users/kellenlai/Documents/GitHub/NUrdle/cmake-build-debug/CMakeFiles/CMakeTmp -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+messageToSelfInClassMethodIdReturnType -clang-vendor-feature=+disableInferNewAvailabilityFromInit -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_4499b.dir/CMakeCXXCompilerABI.cpp.o -x c++ /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCXXCompilerABI.cpp
 clang -cc1 version 13.1.6 (clang-1316.0.21.2.5) default target arm64-apple-darwin21.4.0
 ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/local/include"
 ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/Library/Frameworks"
@@ -33,12 +35,14 @@ ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX1
  /Library/Developer/CommandLineTools/usr/include
  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/System/Library/Frameworks (framework directory)
 End of search list.
-[2/2] Linking CXX executable cmTC_4e26f
+Linking CXX executable cmTC_4499b
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4499b.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/c++  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_4499b.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_4499b 
 Apple clang version 13.1.6 (clang-1316.0.21.2.5)
 Target: arm64-apple-darwin21.4.0
 Thread model: posix
 InstalledDir: /Library/Developer/CommandLineTools/usr/bin
- "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 12.0.0 12.3 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -o cmTC_4e26f -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_4e26f.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/13.1.6/lib/darwin/libclang_rt.osx.a
+ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 12.0.0 12.3 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -o cmTC_4499b -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_4499b.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/13.1.6/lib/darwin/libclang_rt.osx.a
 @(#)PROGRAM:ld  PROJECT:ld64-764
 BUILD 11:22:55 Apr 28 2022
 configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
@@ -68,13 +72,15 @@ Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /Users/kellenlai/Documents/GitHub/NUrdle/cmake-build-debug/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_4e26f && [1/2] Building CXX object CMakeFiles/cmTC_4e26f.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [Run Build Command(s):/usr/bin/make -f Makefile cmTC_4499b/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_4499b.dir/build.make CMakeFiles/cmTC_4499b.dir/build]
+  ignore line: [Building CXX object CMakeFiles/cmTC_4499b.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/Library/Developer/CommandLineTools/usr/bin/c++   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk   -v -Wl -v -MD -MT CMakeFiles/cmTC_4499b.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_4499b.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_4499b.dir/CMakeCXXCompilerABI.cpp.o -c /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCXXCompilerABI.cpp]
   ignore line: [Apple clang version 13.1.6 (clang-1316.0.21.2.5)]
   ignore line: [Target: arm64-apple-darwin21.4.0]
   ignore line: [Thread model: posix]
   ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
   ignore line: [clang: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
-  ignore line: [ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx12.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -fno-rounding-math -munwind-tables -target-sdk-version=12.3 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +fp-armv8 -target-feature +neon -target-feature +crc -target-feature +crypto -target-feature +dotprod -target-feature +fp16fml -target-feature +ras -target-feature +lse -target-feature +rdm -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -fallow-half-arguments-and-returns -debugger-tuning=lldb -target-linker-version 763 -v -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/13.1.6 -dependency-file CMakeFiles/cmTC_4e26f.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_4e26f.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -stdlib=libc++ -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/13.1.6/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -Wno-objc-load-method -fdeprecated-macro -fdebug-compilation-dir=/Users/kellenlai/Documents/GitHub/NUrdle/cmake-build-debug/CMakeFiles/CMakeTmp -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+messageToSelfInClassMethodIdReturnType -clang-vendor-feature=+disableInferNewAvailabilityFromInit -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_4e26f.dir/CMakeCXXCompilerABI.cpp.o -x c++ /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx12.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -fno-rounding-math -munwind-tables -target-sdk-version=12.3 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +fp-armv8 -target-feature +neon -target-feature +crc -target-feature +crypto -target-feature +dotprod -target-feature +fp16fml -target-feature +ras -target-feature +lse -target-feature +rdm -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -fallow-half-arguments-and-returns -debugger-tuning=lldb -target-linker-version 763 -v -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/13.1.6 -dependency-file CMakeFiles/cmTC_4499b.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_4499b.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -stdlib=libc++ -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/13.1.6/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -Wno-objc-load-method -fdeprecated-macro -fdebug-compilation-dir=/Users/kellenlai/Documents/GitHub/NUrdle/cmake-build-debug/CMakeFiles/CMakeTmp -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+messageToSelfInClassMethodIdReturnType -clang-vendor-feature=+disableInferNewAvailabilityFromInit -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_4499b.dir/CMakeCXXCompilerABI.cpp.o -x c++ /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCXXCompilerABI.cpp]
   ignore line: [clang -cc1 version 13.1.6 (clang-1316.0.21.2.5) default target arm64-apple-darwin21.4.0]
   ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/local/include"]
   ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/Library/Frameworks"]
@@ -86,12 +92,14 @@ Parsed CXX implicit link information from above output:
   ignore line: [ /Library/Developer/CommandLineTools/usr/include]
   ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/System/Library/Frameworks (framework directory)]
   ignore line: [End of search list.]
-  ignore line: [[2/2] Linking CXX executable cmTC_4e26f]
+  ignore line: [Linking CXX executable cmTC_4499b]
+  ignore line: [/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4499b.dir/link.txt --verbose=1]
+  ignore line: [/Library/Developer/CommandLineTools/usr/bin/c++  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -Wl -search_paths_first -Wl -headerpad_max_install_names  -v -Wl -v CMakeFiles/cmTC_4499b.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_4499b ]
   ignore line: [Apple clang version 13.1.6 (clang-1316.0.21.2.5)]
   ignore line: [Target: arm64-apple-darwin21.4.0]
   ignore line: [Thread model: posix]
   ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
-  link line: [ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 12.0.0 12.3 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -o cmTC_4e26f -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_4e26f.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/13.1.6/lib/darwin/libclang_rt.osx.a]
+  link line: [ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 12.0.0 12.3 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -o cmTC_4499b -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_4499b.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/13.1.6/lib/darwin/libclang_rt.osx.a]
     arg [/Library/Developer/CommandLineTools/usr/bin/ld] ==> ignore
     arg [-demangle] ==> ignore
     arg [-lto_library] ==> ignore, skip following value
@@ -106,11 +114,11 @@ Parsed CXX implicit link information from above output:
     arg [-syslibroot] ==> ignore
     arg [/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_4e26f] ==> ignore
+    arg [cmTC_4499b] ==> ignore
     arg [-search_paths_first] ==> ignore
     arg [-headerpad_max_install_names] ==> ignore
     arg [-v] ==> ignore
-    arg [CMakeFiles/cmTC_4e26f.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_4499b.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lc++] ==> lib [c++]
     arg [-lSystem] ==> lib [System]
     arg [/Library/Developer/CommandLineTools/usr/lib/clang/13.1.6/lib/darwin/libclang_rt.osx.a] ==> lib [/Library/Developer/CommandLineTools/usr/lib/clang/13.1.6/lib/darwin/libclang_rt.osx.a]
@@ -129,8 +137,12 @@ Parsed CXX implicit link information from above output:
 Performing C++ SOURCE FILE Test CXXFLAG_WALL_OKAY succeeded with the following output:
 Change Dir: /Users/kellenlai/Documents/GitHub/NUrdle/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_eca01 && [1/2] Building CXX object CMakeFiles/cmTC_eca01.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_eca01
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_6c7bf/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_6c7bf.dir/build.make CMakeFiles/cmTC_6c7bf.dir/build
+Building CXX object CMakeFiles/cmTC_6c7bf.dir/src.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++ -DCXXFLAG_WALL_OKAY  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk   -Wall -MD -MT CMakeFiles/cmTC_6c7bf.dir/src.cxx.o -MF CMakeFiles/cmTC_6c7bf.dir/src.cxx.o.d -o CMakeFiles/cmTC_6c7bf.dir/src.cxx.o -c /Users/kellenlai/Documents/GitHub/NUrdle/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_6c7bf
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6c7bf.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/c++  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_6c7bf.dir/src.cxx.o -o cmTC_6c7bf 
 
 
 Source file was:
@@ -138,8 +150,12 @@ int main() { return 0; }
 Performing C++ SOURCE FILE Test CXXFLAG_WCAST_QUAL_OKAY succeeded with the following output:
 Change Dir: /Users/kellenlai/Documents/GitHub/NUrdle/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_ba67d && [1/2] Building CXX object CMakeFiles/cmTC_ba67d.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_ba67d
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_e3f76/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_e3f76.dir/build.make CMakeFiles/cmTC_e3f76.dir/build
+Building CXX object CMakeFiles/cmTC_e3f76.dir/src.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++ -DCXXFLAG_WCAST_QUAL_OKAY  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk   -Wcast-qual -MD -MT CMakeFiles/cmTC_e3f76.dir/src.cxx.o -MF CMakeFiles/cmTC_e3f76.dir/src.cxx.o.d -o CMakeFiles/cmTC_e3f76.dir/src.cxx.o -c /Users/kellenlai/Documents/GitHub/NUrdle/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_e3f76
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e3f76.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/c++  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_e3f76.dir/src.cxx.o -o cmTC_e3f76 
 
 
 Source file was:
@@ -147,8 +163,12 @@ int main() { return 0; }
 Performing C++ SOURCE FILE Test CXXFLAG_WDANGLING_ELSE_OKAY succeeded with the following output:
 Change Dir: /Users/kellenlai/Documents/GitHub/NUrdle/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_5af0a && [1/2] Building CXX object CMakeFiles/cmTC_5af0a.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_5af0a
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_86004/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_86004.dir/build.make CMakeFiles/cmTC_86004.dir/build
+Building CXX object CMakeFiles/cmTC_86004.dir/src.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++ -DCXXFLAG_WDANGLING_ELSE_OKAY  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk   -Wdangling-else -MD -MT CMakeFiles/cmTC_86004.dir/src.cxx.o -MF CMakeFiles/cmTC_86004.dir/src.cxx.o.d -o CMakeFiles/cmTC_86004.dir/src.cxx.o -c /Users/kellenlai/Documents/GitHub/NUrdle/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_86004
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_link_script CMakeFiles/cmTC_86004.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/c++  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_86004.dir/src.cxx.o -o cmTC_86004 
 
 
 Source file was:
@@ -156,8 +176,12 @@ int main() { return 0; }
 Performing C++ SOURCE FILE Test CXXFLAG_WNULL_DEREFERENCE_OKAY succeeded with the following output:
 Change Dir: /Users/kellenlai/Documents/GitHub/NUrdle/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_f4ab8 && [1/2] Building CXX object CMakeFiles/cmTC_f4ab8.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_f4ab8
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_c198e/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_c198e.dir/build.make CMakeFiles/cmTC_c198e.dir/build
+Building CXX object CMakeFiles/cmTC_c198e.dir/src.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++ -DCXXFLAG_WNULL_DEREFERENCE_OKAY  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk   -Wnull-dereference -MD -MT CMakeFiles/cmTC_c198e.dir/src.cxx.o -MF CMakeFiles/cmTC_c198e.dir/src.cxx.o.d -o CMakeFiles/cmTC_c198e.dir/src.cxx.o -c /Users/kellenlai/Documents/GitHub/NUrdle/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_c198e
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c198e.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/c++  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_c198e.dir/src.cxx.o -o cmTC_c198e 
 
 
 Source file was:
@@ -165,8 +189,12 @@ int main() { return 0; }
 Performing C++ SOURCE FILE Test CXXFLAG_WTYPE_LIMITS_OKAY succeeded with the following output:
 Change Dir: /Users/kellenlai/Documents/GitHub/NUrdle/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_fe81f && [1/2] Building CXX object CMakeFiles/cmTC_fe81f.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_fe81f
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_35c5f/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_35c5f.dir/build.make CMakeFiles/cmTC_35c5f.dir/build
+Building CXX object CMakeFiles/cmTC_35c5f.dir/src.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++ -DCXXFLAG_WTYPE_LIMITS_OKAY  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk   -Wtype-limits -MD -MT CMakeFiles/cmTC_35c5f.dir/src.cxx.o -MF CMakeFiles/cmTC_35c5f.dir/src.cxx.o.d -o CMakeFiles/cmTC_35c5f.dir/src.cxx.o -c /Users/kellenlai/Documents/GitHub/NUrdle/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_35c5f
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_link_script CMakeFiles/cmTC_35c5f.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/c++  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_35c5f.dir/src.cxx.o -o cmTC_35c5f 
 
 
 Source file was:
@@ -174,8 +202,12 @@ int main() { return 0; }
 Performing C++ SOURCE FILE Test CXXFLAG_WWRITE_STRINGS_OKAY succeeded with the following output:
 Change Dir: /Users/kellenlai/Documents/GitHub/NUrdle/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_13cf6 && [1/2] Building CXX object CMakeFiles/cmTC_13cf6.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_13cf6
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_db6a8/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_db6a8.dir/build.make CMakeFiles/cmTC_db6a8.dir/build
+Building CXX object CMakeFiles/cmTC_db6a8.dir/src.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++ -DCXXFLAG_WWRITE_STRINGS_OKAY  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk   -Wwrite-strings -MD -MT CMakeFiles/cmTC_db6a8.dir/src.cxx.o -MF CMakeFiles/cmTC_db6a8.dir/src.cxx.o.d -o CMakeFiles/cmTC_db6a8.dir/src.cxx.o -c /Users/kellenlai/Documents/GitHub/NUrdle/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_db6a8
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_link_script CMakeFiles/cmTC_db6a8.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/c++  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_db6a8.dir/src.cxx.o -o cmTC_db6a8 
 
 
 Source file was:
@@ -183,8 +215,12 @@ int main() { return 0; }
 Performing C++ SOURCE FILE Test CXXFLAG_WERROR_BOOL_OPERATION_OKAY succeeded with the following output:
 Change Dir: /Users/kellenlai/Documents/GitHub/NUrdle/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_04a82 && [1/2] Building CXX object CMakeFiles/cmTC_04a82.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_04a82
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_d31f0/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_d31f0.dir/build.make CMakeFiles/cmTC_d31f0.dir/build
+Building CXX object CMakeFiles/cmTC_d31f0.dir/src.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++ -DCXXFLAG_WERROR_BOOL_OPERATION_OKAY  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk   -Werror=bool-operation -MD -MT CMakeFiles/cmTC_d31f0.dir/src.cxx.o -MF CMakeFiles/cmTC_d31f0.dir/src.cxx.o.d -o CMakeFiles/cmTC_d31f0.dir/src.cxx.o -c /Users/kellenlai/Documents/GitHub/NUrdle/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_d31f0
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d31f0.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/c++  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_d31f0.dir/src.cxx.o -o cmTC_d31f0 
 
 
 Source file was:
@@ -192,8 +228,12 @@ int main() { return 0; }
 Performing C++ SOURCE FILE Test CXXFLAG_WERROR_INT_TO_POINTER_CAST_OKAY succeeded with the following output:
 Change Dir: /Users/kellenlai/Documents/GitHub/NUrdle/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_756cc && [1/2] Building CXX object CMakeFiles/cmTC_756cc.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_756cc
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_d1ddd/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_d1ddd.dir/build.make CMakeFiles/cmTC_d1ddd.dir/build
+Building CXX object CMakeFiles/cmTC_d1ddd.dir/src.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++ -DCXXFLAG_WERROR_INT_TO_POINTER_CAST_OKAY  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk   -Werror=int-to-pointer-cast -MD -MT CMakeFiles/cmTC_d1ddd.dir/src.cxx.o -MF CMakeFiles/cmTC_d1ddd.dir/src.cxx.o.d -o CMakeFiles/cmTC_d1ddd.dir/src.cxx.o -c /Users/kellenlai/Documents/GitHub/NUrdle/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_d1ddd
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d1ddd.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/c++  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_d1ddd.dir/src.cxx.o -o cmTC_d1ddd 
 
 
 Source file was:
@@ -201,8 +241,12 @@ int main() { return 0; }
 Performing C++ SOURCE FILE Test CXXFLAG_WERROR_RETURN_TYPE_OKAY succeeded with the following output:
 Change Dir: /Users/kellenlai/Documents/GitHub/NUrdle/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_a81b4 && [1/2] Building CXX object CMakeFiles/cmTC_a81b4.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_a81b4
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_056c7/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_056c7.dir/build.make CMakeFiles/cmTC_056c7.dir/build
+Building CXX object CMakeFiles/cmTC_056c7.dir/src.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++ -DCXXFLAG_WERROR_RETURN_TYPE_OKAY  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk   -Werror=return-type -MD -MT CMakeFiles/cmTC_056c7.dir/src.cxx.o -MF CMakeFiles/cmTC_056c7.dir/src.cxx.o.d -o CMakeFiles/cmTC_056c7.dir/src.cxx.o -c /Users/kellenlai/Documents/GitHub/NUrdle/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_056c7
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_link_script CMakeFiles/cmTC_056c7.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/c++  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_056c7.dir/src.cxx.o -o cmTC_056c7 
 
 
 Source file was:
@@ -210,8 +254,12 @@ int main() { return 0; }
 Performing C++ SOURCE FILE Test CXXFLAG_WERROR_UNINITIALIZED_OKAY succeeded with the following output:
 Change Dir: /Users/kellenlai/Documents/GitHub/NUrdle/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_f0c7e && [1/2] Building CXX object CMakeFiles/cmTC_f0c7e.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_f0c7e
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_6c1c8/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_6c1c8.dir/build.make CMakeFiles/cmTC_6c1c8.dir/build
+Building CXX object CMakeFiles/cmTC_6c1c8.dir/src.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++ -DCXXFLAG_WERROR_UNINITIALIZED_OKAY  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk   -Werror=uninitialized -MD -MT CMakeFiles/cmTC_6c1c8.dir/src.cxx.o -MF CMakeFiles/cmTC_6c1c8.dir/src.cxx.o.d -o CMakeFiles/cmTC_6c1c8.dir/src.cxx.o -c /Users/kellenlai/Documents/GitHub/NUrdle/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_6c1c8
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6c1c8.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/c++  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_6c1c8.dir/src.cxx.o -o cmTC_6c1c8 
 
 
 Source file was:
@@ -219,8 +267,12 @@ int main() { return 0; }
 Performing C++ SOURCE FILE Test LDFLAG_FSANITIZE_UNDEFINED_OKAY succeeded with the following output:
 Change Dir: /Users/kellenlai/Documents/GitHub/NUrdle/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_7fb6c && [1/2] Building CXX object CMakeFiles/cmTC_7fb6c.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_7fb6c
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_7ed1b/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_7ed1b.dir/build.make CMakeFiles/cmTC_7ed1b.dir/build
+Building CXX object CMakeFiles/cmTC_7ed1b.dir/src.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++ -DLDFLAG_FSANITIZE_UNDEFINED_OKAY  -fsanitize=undefined  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_7ed1b.dir/src.cxx.o -MF CMakeFiles/cmTC_7ed1b.dir/src.cxx.o.d -o CMakeFiles/cmTC_7ed1b.dir/src.cxx.o -c /Users/kellenlai/Documents/GitHub/NUrdle/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_7ed1b
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7ed1b.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/c++  -fsanitize=undefined  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_7ed1b.dir/src.cxx.o -o cmTC_7ed1b 
 
 
 Source file was:

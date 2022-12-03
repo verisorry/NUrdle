@@ -156,7 +156,7 @@
 			},
 			{
 				"backtrace" : 3,
-				"fragment" : ".cs211/lib/ge211/src/libge211.a",
+				"fragment" : "../src/libge211.a",
 				"role" : "libraries"
 			},
 			{
