@@ -32,11 +32,7 @@ Controller::on_key(ge211::Key key)
 {
     if (key.is_textual() || char(key.code()) == 13) {
         model_.hit_key(char(key.code()));
-//        if (model_.invalid_guess) {
-//            move_window_dimensions();
-//        }
     }
-
 
 
 //    if (model_.game_is_finished()) {
@@ -49,7 +45,3 @@ Controller::draw(ge211::Sprite_set& set)
 {
     view_.draw(set);
 }
-
-//void Controller::on_frame(double dt) {
-//    model_.on_frame(dt);
-//}

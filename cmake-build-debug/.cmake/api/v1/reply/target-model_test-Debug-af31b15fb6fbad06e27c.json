@@ -291,12 +291,12 @@
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 6,
-			"id" : "catch::@be6f5491b685a53c462d"
-		},
-		{
 			"backtrace" : 7,
 			"id" : "ge211::@c6d847fed01cad5c45fc"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "catch::@be6f5491b685a53c462d"
 		}
 	],
 	"id" : "model_test::@6890427a1f51a3e7e1df",

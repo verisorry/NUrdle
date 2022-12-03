@@ -14,19 +14,9 @@ Model::Model()
             squares_[i][j] = ' ';
         }
     }
-    for (int i = 0; i < end_width; i++) {
-        for (int j = 0; j < end_height; j++) {
-            end_text[i][j] = ' ';
-        }
-    }
     for (int i = 0; i < grid_width; i++) {
             guess_grid_[i] = ' ';
     }
-
-}
-
-char Model::end_at(int i, int j) const {
-    return end_text[i][j];
 }
 
 char Model::square_at(int i, int j) const {
@@ -34,9 +24,6 @@ char Model::square_at(int i, int j) const {
 }
 char Model::guess_grid_at(int i) const {
     return guess_grid_[i];
-}
-char Model::get_guess_outcome(int i) {
-    return guess_outcome[i];
 }
 
 bool Model::valid_guess() {
@@ -67,11 +54,11 @@ Model::hit_key(char letter)
     if (letter == 13) {
         if (valid_guess()) {
             // Call check the guess
-            invalid_guess = false;
             check_guess();
             // insert guess into grid
             for (int i = 0; i < grid_width; i++) {
                 squares_[i][num_guesses_used] = user_guess_[i];
+                cout << guess_outcome[i];
             }
             for (int j = 0; j < grid_width; j++) {
                 guess_grid_[j] = ' ';
@@ -83,18 +70,15 @@ Model::hit_key(char letter)
                         squares_[i][j] = ' ';
                     }
                 }
-                end_text[5][0] = 'E'; end_text[6][0] = 'L'; end_text[7][0] = 'D'; end_text[8][0] = 'E';
-                end_text[9][0] = 'R'; end_text[5][1] = 'O'; end_text[6][1] = 'F'; end_text[5][2] = 'A';
-                end_text[5][3] = 'G'; end_text[6][3] = 'R'; end_text[7][3] = 'E'; end_text[8][3] = 'A';
-                end_text[9][3] = 'T'; end_text[5][4] = 'E'; end_text[6][4] = 'R'; end_text[5][5] = 'A';
-                end_text[6][5] = 'G'; end_text[7][5] = 'E';
-                won = true;
+                squares_[0][0] = 'E'; squares_[1][0] = 'L'; squares_[2][0] = 'D'; squares_[3][0] = 'E';
+                squares_[4][0] = 'R'; squares_[0][1] = 'O'; squares_[1][1] = 'F'; squares_[0][2] = 'A';
+                squares_[0][3] = 'G'; squares_[1][3] = 'R'; squares_[2][3] = 'E'; squares_[3][3] = 'A';
+                squares_[4][3] = 'T'; squares_[0][4] = 'E'; squares_[1][4] = 'R'; squares_[0][5] = 'A';
+                squares_[1][5] = 'G'; squares_[2][5] = 'E';
             }
             update_num_guesses();
             reset_num_letters();
             reset_guess();
-
-            //grid_start++;
             //reset_outcome();
             // If lose
             if (num_guesses_used == 6 && strcmp(guess_outcome, cor_guess_outcome) != 0) {
@@ -104,10 +88,14 @@ Model::hit_key(char letter)
                         squares_[i][j] = ' ';
                     }
                 }
-                end_text[5][0] = 'Y'; end_text[6][0] = 'O'; end_text[7][0] = 'U'; end_text[5][1] = 'L';
-                end_text[6][1] = 'O'; end_text[7][1] = 'S'; end_text[8][1] = 'T'; end_text[9][1] = '!';
-                end_text[5][2] = 'T'; end_text[6][2] = 'R'; end_text[7][2] = 'Y'; end_text[5][3] = 'A';
-                end_text[6][3] = 'G'; end_text[7][3] = 'A'; end_text[8][3] = 'I'; end_text[9][3] = 'N';
+                squares_[1][0] = 'Y';
+                squares_[2][0] = 'O';
+                squares_[3][0] = 'U';
+                squares_[0][1] = 'L';
+                squares_[1][1] = 'O';
+                squares_[2][1] = 'S';
+                squares_[3][1] = 'T';
+                squares_[4][1] = '!';
             }
         }
         else {
@@ -146,20 +134,6 @@ Model::check_guess() {
         }
     }
 }
-
-//void Model::on_frame(double dt) {
-//    if (invalid_guess) {
-//
-//    }
-//    if (key_pressed_ == 'q') {
-//        pokemon_ = pokemon_.next(dt);
-//    }
-//
-//    if (key_pressed_ == 'k') {
-//        //handle each frame of jumping
-//        jump(dt);
-//    }
-//}
 
 
 
