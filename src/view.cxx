@@ -46,13 +46,14 @@ View::draw(ge211::Sprite_set& set)
     // for each cell in the grid, initiate an empty text sprite
     for (int x = 0; x < model_.grid_width; x++) {
         for (int y = 0; y < model_.grid_height; y++) {
-
             set.add_sprite(cell_sprite, {x*cell_width+10, y*cell_height+10}, 0);
 
             if (model_.guess_outcome[x] == 'c') {
-                cell_sprite.recolor(correct_colour);
+                set.add_sprite(correct_cell_sprite, {x*cell_width+10, model_.num_guesses_used*cell_height+10}, 1);
             } else if (model_.guess_outcome[x] == 'p') {
-                cell_sprite.recolor(present_colour);
+                set.add_sprite(present_cell_sprite, {x*cell_width+10, model_.num_guesses_used*cell_height+10}, 1);
+            } else if (model_.guess_outcome[x] == 'a') {
+                set.add_sprite(cell_sprite, {x*cell_width+10, y*cell_height+10}, 1);
             }
 
             ge211::Text_sprite::Builder cell_builder(sans30_);

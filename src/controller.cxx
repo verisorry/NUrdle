@@ -37,7 +37,9 @@ Controller::on_key(ge211::Key key)
 //        }
     }
 
-
+void Controller::on_frame(double dt) {
+    model_.on_frame(dt);
+}
 
 //    if (model_.game_is_finished()) {
 //        model_ = Model {"gameover"};
