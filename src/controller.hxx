@@ -19,6 +19,8 @@ protected:
 
     void on_start() override;
 
+//    void on_frame(double dt) override;
+
     void on_key(ge211::Key key) override;
 
 private:
