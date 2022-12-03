@@ -54,7 +54,7 @@ public:
 
     void check_guess();
 
-    char guess_outcome[5] = {'a', 'a','a', 'a','a'};
+    char guess_outcome[30];
 
     // char guess_outcome[30] = {
     //     'a',
@@ -95,9 +95,13 @@ public:
     char end_text[10][7];
 
     bool won = false;
+<<<<<<< HEAD
 
     bool used_all_guesses = false;
 
+=======
+    bool compare(int i);
+>>>>>>> origin/kattempt
 private:
     char squares_[5][6];
     char guess_grid_[5];
@@ -105,5 +109,10 @@ private:
     std::vector<std::string> dictionary_ = {"elder"};
     std::string correct_word_;
     size_t next_word_index_ = 0;
+<<<<<<< HEAD
     char cor_guess_outcome[5] = {'c', 'c', 'c', 'c', 'c'};
+=======
+    bool used_all_guesses = false;
+    char cor_guess[5] = {'c', 'c', 'c', 'c', 'c'};
+>>>>>>> origin/kattempt
 };
