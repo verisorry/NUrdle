@@ -1,0 +1,21 @@
+Start testing: Dec 03 19:12 CST
+----------------------------------------------------------
+1/1 Testing: Test_model_test
+1/1 Test: Test_model_test
+Command: "/Users/silviafang/Desktop/fall2022/CS 211/NUrdle/build/model_test"
+Directory: /Users/silviafang/Desktop/fall2022/CS 211/NUrdle/build
+"Test_model_test" start time: Dec 03 19:12 CST
+Output:
+----------------------------------------------------------
+===============================================================================
+All tests passed (60 assertions in 5 test cases)
+
+<end of output>
+Test time =   0.67 sec
+----------------------------------------------------------
+Test Passed.
+"Test_model_test" end time: Dec 03 19:12 CST
+"Test_model_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Dec 03 19:12 CST

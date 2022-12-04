@@ -1,152 +1,132 @@
 #include "model.hxx"
 #include <catch.hxx>
+#include <iostream> 
 
-using namespace ge211;
+using namespace std;
 
-<<<<<<< HEAD
-struct Test_access {
-    Model& model;
-
-    explicit Test_access(Model&);
-
-    void set_guess(char user_guess_[5]);
-
-};
+// using namespace ge211;
 
 TEST_CASE("Check Absent Character")
 {
-=======
-struct Test_access
-{
-    Model &model;
+    Model m;
+    m.reset_guess();
+    m.reset_outcome();
+    m.load_word();
 
-    explicit Test_access(Model &);
+    m.num_guesses_used = 0;
 
-    void set_guess(char user_guess_[5]);
-};
-
-TEST_CASE("Check Absent Character")
-{
->>>>>>> kattempt
-    Model model;
-    Test_access access(model);
-
-    char test[5] = {'t', 'o', 'x', 'i', 'c'};
-    access.set_guess(test);
-
-    CHECK(model.valid_guess() == true);
-    model.check_guess();
-
-<<<<<<< HEAD
     for (int i = 0; i < 5; i++) {
-=======
-    for (int i = 0; i < 5; i++)
-    {
->>>>>>> kattempt
-        CHECK(model.guess_outcome[i] == 'a');
+        m.user_guess_[i] = 't';
+    }
+
+    m.check_guess();
+    CHECK(m.valid_guess() == false);
+    for (int i = 0; i < 5; i++) {
+        CHECK(m.guess_outcome[i] == 'a');
     }
 }
 
 TEST_CASE("Check Present Character")
 {
-    Model model;
-    Test_access access(model);
+    Model m;
+    m.reset_guess();
+    m.reset_outcome();
+    m.load_word();
+
+    m.num_guesses_used = 0;
 
     char test[5] = {'t', 'h', 'e', 'm', 'e'};
-    access.set_guess(test);
 
-    CHECK(model.valid_guess() == true);
-    model.check_guess();
-    CHECK(model.guess_outcome[0] == 'a');
-    CHECK(model.guess_outcome[1] == 'a');
-    CHECK(model.guess_outcome[2] == 'p');
-    CHECK(model.guess_outcome[3] == 'a');
-    CHECK(model.guess_outcome[4] == 'p');
+    for (int i = 0; i < 5; i++) {
+        m.user_guess_[i] = test[i];
+    }
+
+    m.check_guess();
+    CHECK(m.valid_guess() == true);
+    CHECK(m.guess_outcome[0] == 'a');
+    CHECK(m.guess_outcome[1] == 'a');
+    CHECK(m.guess_outcome[2] == 'p');
+    CHECK(m.guess_outcome[3] == 'a');
+    CHECK(m.guess_outcome[4] == 'p');
 }
 
 TEST_CASE("Check Correct Character")
 {
-    Model model;
-    Test_access access(model);
-    char test[5] = {'e', 'a', 'r', 't', 'h'};
-    access.set_guess(test);
+    Model m;
+    m.reset_guess();
+    m.reset_outcome();
+    m.load_word();
 
-    CHECK(model.valid_guess() == true);
-    model.check_guess();
-    CHECK(model.guess_outcome[0] == 'c');
-    CHECK(model.guess_outcome[1] == 'a');
-    CHECK(model.guess_outcome[2] == 'p');
-    CHECK(model.guess_outcome[3] == 'a');
-    CHECK(model.guess_outcome[4] == 'a');
+    m.num_guesses_used = 0;
+
+    char test[5] = {'e', 'a', 'r', 't', 'h'};
+
+    for (int i = 0; i < 5; i++) {
+        m.user_guess_[i] = test[i];
+    }
+
+    m.check_guess();
+    CHECK(m.valid_guess() == true);
+    CHECK(m.guess_outcome[0] == 'c');
+    CHECK(m.guess_outcome[1] == 'a');
+    CHECK(m.guess_outcome[2] == 'p');
+    CHECK(m.guess_outcome[3] == 'a');
+    CHECK(m.guess_outcome[4] == 'a');
 }
 
 TEST_CASE("Check Correct Guess")
 {
-    Model model;
-    Test_access access(model);
-    char test[5] = {'e', 'l', 'd', 'e', 'r'};
-    access.set_guess(test);
+    Model m;
+    m.reset_guess();
+    m.reset_outcome();
+    m.load_word();
 
-    CHECK(model.valid_guess() == true);
-    model.check_guess();
-    CHECK(model.guess_outcome[0] == 'c');
-    CHECK(model.guess_outcome[1] == 'c');
-    CHECK(model.guess_outcome[2] == 'c');
-    CHECK(model.guess_outcome[3] == 'c');
-    CHECK(model.guess_outcome[4] == 'c');
-    CHECK(model.won == true);
+    m.num_guesses_used = 0;
+
+    char test[5] = {'e', 'l', 'd', 'e', 'r'};
+
+    for (int i = 0; i < 5; i++) {
+        m.user_guess_[i] = test[i];
+    }
+
+    m.check_guess();
+    CHECK(m.valid_guess() == true);
+    CHECK(m.guess_outcome[0] == 'c');
+    CHECK(m.guess_outcome[1] == 'c');
+    CHECK(m.guess_outcome[2] == 'c');
+    CHECK(m.guess_outcome[3] == 'c');
+    CHECK(m.guess_outcome[4] == 'c');
+
+    if (m.compare(m.num_guesses_used)) {
+        m.won = true;
+    }
+    CHECK(m.won == true);
 }
 
 TEST_CASE("Check Failed Game")
 {
-    Model model;
-    Test_access access(model);
+    Model m;
+    m.reset_guess();
+    m.reset_outcome();
+    m.load_word();
 
-<<<<<<< HEAD
     for (int i = 0; i < 5; i++) {
-=======
-    for (int i = 0; i < 5; i++)
-    {
->>>>>>> kattempt
         char test[5] = {'t', 'o', 'x', 'i', 'c'};
-        access.set_guess(test);
-        CHECK(model.valid_guess() == true);
-        model.check_guess();
-        CHECK(model.guess_outcome[0] == 'a');
-        CHECK(model.guess_outcome[1] == 'a');
-        CHECK(model.guess_outcome[2] == 'a');
-        CHECK(model.guess_outcome[3] == 'a');
-        CHECK(model.guess_outcome[4] == 'a');
-<<<<<<< HEAD
-        CHECK(model.num_guesses_used == i+1);
-=======
-        CHECK(model.num_guesses_used == i + 1);
->>>>>>> kattempt
-        CHECK(model.won == false);
-    }
+        m.num_guesses_used = i;
+        for (int i = 0; i < 5; i++) {
+            m.user_guess_[i] = test[i];
+        }
 
-    CHECK(model.used_all_guesses == true);
-    CHECK(model.won == false);
-}
-
-<<<<<<< HEAD
-Test_access::Test_access(Model& model) 
-    : model(model) 
-{ }
-
-void Test_access::set_guess(char input[5]) {
-    for (int i = 0; i < 5; i++) {
-=======
-Test_access::Test_access(Model &model)
-    : model(model)
-{
-}
-
-void Test_access::set_guess(char input[5])
-{
-    for (int i = 0; i < 5; i++)
-    {
->>>>>>> kattempt
-        model.user_guess_[i] = input[i];
+        CHECK(m.valid_guess() == true);
+        m.check_guess();
+        CHECK(m.guess_outcome[0] == 'a');
+        CHECK(m.guess_outcome[1] == 'a');
+        CHECK(m.guess_outcome[2] == 'a');
+        CHECK(m.guess_outcome[3] == 'a');
+        CHECK(m.guess_outcome[4] == 'a');
+        if (m.compare(m.num_guesses_used)) {
+            m.won = true;
+        }
+        CHECK(m.won == false);
     }
 }
